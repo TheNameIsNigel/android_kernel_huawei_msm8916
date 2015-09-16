@@ -1,0 +1,1209 @@
+arch/microblaze/kernel/cpu/cpuinfo-static.c:21:	early_printk("ERROR: Microblaze " x "-different for kernel and DTS\n");
+arch/microblaze/kernel/cpu/cpuinfo-pvr-full.c:27:	early_printk("ERROR: Microblaze " x "-different for PVR and DTS\n");
+arch/microblaze/kernel/cpu/cpuinfo-pvr-full.c:30:	pr_info("ERROR: Microblaze " x "-different for PVR and DTS\n");
+arch/microblaze/kernel/cpu/cpuinfo-pvr-full.c:41:		pr_err("ERROR: MB has broken PVR regs -> use DTS setting\n");
+arch/microblaze/kernel/cpu/cpuinfo-pvr-full.c:116:	/* take timebase-frequency from DTS */
+arch/sh/include/cpu-sh4/cpu/watchdog.h:21:#define WTCNT		0xffcc0000 /*WDTST*/
+arch/mips/cavium-octeon/Makefile:23:DTS_FILES = octeon_3xxx.dts octeon_68xx.dts
+arch/mips/cavium-octeon/Makefile:24:DTB_FILES = $(patsubst %.dts, %.dtb, $(DTS_FILES))
+arch/mips/cavium-octeon/Makefile:26:obj-y += $(patsubst %.dts, %.dtb.o, $(DTS_FILES))
+arch/mips/alchemy/common/dbdma.c:532:		dest1 |= DSCR_DEST1_DTS(DSCR_xTS_SIZE1);
+arch/mips/alchemy/common/dbdma.c:535:		dest1 |= DSCR_DEST1_DTS(DSCR_xTS_SIZE2);
+arch/mips/alchemy/common/dbdma.c:538:		dest1 |= DSCR_DEST1_DTS(DSCR_xTS_SIZE4);
+arch/mips/alchemy/common/dbdma.c:542:		dest1 |= DSCR_DEST1_DTS(DSCR_xTS_SIZE8);
+arch/mips/include/asm/mach-au1x00/au1xxx_dbdma.h:273:#define DSCR_DEST1_DTS_MASK	(3 << 30)	/* Dest xfer size */
+arch/mips/include/asm/mach-au1x00/au1xxx_dbdma.h:285:#define DSCR_DEST1_DTS(x)	(((x) & 3) << 30)
+arch/mips/include/asm/octeon/cvmx-mdio.h:262:#define CVMX_MMD_DEVICE_DTS_XS	     5
+arch/mips/netlogic/Kconfig:10:	  pointer to the kernel.  The corresponding DTS file is at
+arch/mips/netlogic/Kconfig:19:	  pointer to the kernel.  The corresponding DTS file is at
+arch/frv/include/asm/mb93493-regs.h:104:#define MB93493_VCC_RDTS	0x128	/* DMA transfer size */
+arch/frv/include/asm/mb93493-regs.h:105:#define MB93493_VCC_RDTS_4B	0x01000000	/* 4-byte transfer */
+arch/frv/include/asm/mb93493-regs.h:106:#define MB93493_VCC_RDTS_32B	0x03000000	/* 32-byte transfer */
+arch/frv/include/asm/mb93493-regs.h:107:#define MB93493_VCC_RDTS_SHIFT	24
+arch/frv/include/asm/mb93493-regs.h:153:#define VCC_RCC_FDTS		0x00300000	/* interlace field start */
+arch/frv/include/asm/mb93493-regs.h:154:#define VCC_RCC_FDTS_3_8	0x00000000	/* - 3/8 of horizontal entire cycle */
+arch/frv/include/asm/mb93493-regs.h:155:#define VCC_RCC_FDTS_1_4	0x00100000	/* - 1/4 of horizontal entire cycle */
+arch/frv/include/asm/mb93493-regs.h:156:#define VCC_RCC_FDTS_7_16	0x00200000	/* - 7/16 of horizontal entire cycle */
+arch/frv/include/asm/mb93493-regs.h:157:#define VCC_RCC_FDTS_SHIFT	20
+arch/sparc/include/asm/ttable.h:205:#define SUN4V_DTSB_MISS					\
+arch/sparc/include/asm/hypervisor.h:65:#define HV_EBADTSB			5  /* Invalid TSB description      */
+arch/sparc/include/asm/hypervisor.h:609: *		EBADTSB			Invalid associativity or size in a TSB
+arch/sparc/kernel/ttable_64.S:39:tl0_dtsb_4v:	SUN4V_DTSB_MISS
+arch/sparc/kernel/ttable_64.S:204:tl1_dtsb_4v:	SUN4V_DTSB_MISS
+arch/avr32/include/asm/ocd.h:31:#define OCD_DTSA0			0x0038  /* DT Start Addr Channel 0 */
+arch/avr32/include/asm/ocd.h:32:#define OCD_DTSA1			0x003c  /* DT Start Addr Channel 1 */
+arch/avr32/include/asm/ocd.h:140:#define OCD_WT_DTS_START		23
+arch/avr32/include/asm/ocd.h:141:#define OCD_WT_DTS_SIZE			3
+arch/avr32/include/asm/ocd.h:161:/* Bits in DTSA0 */
+arch/avr32/include/asm/ocd.h:162:#define OCD_DTSA0_DTSA_START		0
+arch/avr32/include/asm/ocd.h:163:#define OCD_DTSA0_DTSA_SIZE		32
+arch/avr32/include/asm/ocd.h:165:/* Bits in DTSA1 */
+arch/avr32/include/asm/ocd.h:166:#define OCD_DTSA1_DTSA_START		0
+arch/avr32/include/asm/ocd.h:167:#define OCD_DTSA1_DTSA_SIZE		32
+arch/blackfin/mach-bf609/boards/ezkit.c:522:	P_SPORT2_DRPRI, P_SPORT2_RSCLK, P_SPORT2_DRSEC, P_SPORT2_DTSEC, 0
+arch/blackfin/mach-bf527/include/mach/portmux.h:36:#define P_SPORT0_DTSEC	(P_DEFINED | P_IDENT(GPIO_PF6) | P_FUNCT(1))
+arch/blackfin/mach-bf527/include/mach/portmux.h:41:#define P_SPORT0_DTSEC	(P_DEFINED | P_IDENT(GPIO_PG4) | P_FUNCT(1))
+arch/blackfin/mach-bf527/include/mach/portmux.h:59:#define P_SPORT1_DTSEC	(P_DEFINED | P_IDENT(GPIO_PF14) | P_FUNCT(1))
+arch/blackfin/mach-bf548/include/mach/portmux.h:13:#define P_SPORT2_DTSEC	(P_DEFINED | P_IDENT(GPIO_PA1) | P_FUNCT(0))
+arch/blackfin/mach-bf548/include/mach/portmux.h:21:#define P_SPORT3_DTSEC	(P_DEFINED | P_IDENT(GPIO_PA9) | P_FUNCT(0))
+arch/blackfin/mach-bf548/include/mach/portmux.h:54:#define P_SPORT0_DTSEC	(P_DEFINED | P_IDENT(GPIO_PC1) | P_FUNCT(0))
+arch/blackfin/mach-bf548/include/mach/portmux.h:104:#define P_SPORT1_DTSEC	(P_DEFINED | P_IDENT(GPIO_PD1) | P_FUNCT(2))
+arch/blackfin/mach-bf548/boards/cm_bf548.c:646:	P_SPORT2_DRPRI, P_SPORT2_RSCLK, P_SPORT2_DRSEC, P_SPORT2_DTSEC, 0
+arch/blackfin/mach-bf548/boards/cm_bf548.c:680:	P_SPORT3_DRPRI, P_SPORT3_RSCLK, P_SPORT3_DRSEC, P_SPORT3_DTSEC, 0
+arch/blackfin/mach-bf548/boards/ezkit.c:753:	P_SPORT2_DRPRI, P_SPORT2_RSCLK, P_SPORT2_DRSEC, P_SPORT2_DTSEC, 0
+arch/blackfin/mach-bf548/boards/ezkit.c:787:	P_SPORT3_DRPRI, P_SPORT3_RSCLK, P_SPORT3_DRSEC, P_SPORT3_DTSEC, 0
+arch/blackfin/mach-bf533/include/mach/portmux.h:42:#define P_SPORT1_DTSEC	(P_DONTCARE)
+arch/blackfin/mach-bf533/include/mach/portmux.h:48:#define P_SPORT0_DTSEC	(P_DONTCARE)
+arch/blackfin/include/asm/portmux.h:33:#ifndef P_SPORT2_DTSEC
+arch/blackfin/include/asm/portmux.h:34:#define P_SPORT2_DTSEC P_UNDEF
+arch/blackfin/include/asm/portmux.h:65:#ifndef P_SPORT3_DTSEC
+arch/blackfin/include/asm/portmux.h:66:#define P_SPORT3_DTSEC P_UNDEF
+arch/blackfin/include/asm/portmux.h:205:#ifndef P_SPORT0_DTSEC
+arch/blackfin/include/asm/portmux.h:206:#define P_SPORT0_DTSEC P_UNDEF
+arch/blackfin/include/asm/portmux.h:397:#ifndef P_SPORT1_DTSEC
+arch/blackfin/include/asm/portmux.h:398:#define P_SPORT1_DTSEC P_UNDEF
+arch/blackfin/mach-bf518/include/mach/portmux.h:128:#define P_SPORT0_DTSEC	(P_DEFINED | P_IDENT(GPIO_PG9) | P_FUNCT(0))
+arch/blackfin/mach-bf518/include/mach/portmux.h:137:#define P_SPORT1_DTSEC	(P_DEFINED | P_IDENT(GPIO_PH6) | P_FUNCT(0))
+arch/blackfin/mach-bf537/include/mach/portmux.h:60:#define P_SPORT1_DTSEC	(P_DEFINED | P_IDENT(GPIO_PG9) | P_FUNCT(1))
+arch/blackfin/mach-bf537/include/mach/portmux.h:106:#define P_SPORT0_DTSEC	(P_DEFINED | P_IDENT(PORT_PJ5) | P_FUNCT(0))
+arch/blackfin/mach-bf537/boards/stamp.c:2374:	P_SPORT0_DRPRI, P_SPORT0_RSCLK, P_SPORT0_DRSEC, P_SPORT0_DTSEC, 0
+arch/blackfin/mach-bf537/boards/cm_bf537e.c:585:	P_SPORT0_DRPRI, P_SPORT0_RSCLK, P_SPORT0_DRSEC, P_SPORT0_DTSEC, 0
+arch/blackfin/mach-bf538/include/mach/portmux.h:32:#define P_SPORT1_DTSEC	(P_DONTCARE)
+arch/blackfin/mach-bf538/include/mach/portmux.h:38:#define P_SPORT0_DTSEC	(P_DONTCARE)
+arch/blackfin/mach-bf538/include/mach/portmux.h:79:#define P_SPORT2_DTSEC	(P_DEFINED | P_IDENT(GPIO_PE7))
+arch/blackfin/mach-bf538/include/mach/portmux.h:87:#define P_SPORT3_DTSEC	(P_DEFINED | P_IDENT(GPIO_PE15))
+arch/blackfin/mach-bf538/boards/ezkit.c:370:	P_SPORT2_DRPRI, P_SPORT2_RSCLK, P_SPORT2_DRSEC, P_SPORT2_DTSEC, 0
+arch/blackfin/mach-bf538/boards/ezkit.c:404:	P_SPORT3_DRPRI, P_SPORT3_RSCLK, P_SPORT3_DRSEC, P_SPORT3_DTSEC, 0
+arch/blackfin/mach-bf561/include/mach/portmux.h:61:#define P_SPORT1_DTSEC	(P_DEFINED | P_IDENT(GPIO_PF22))
+arch/blackfin/mach-bf561/include/mach/portmux.h:67:#define P_SPORT0_DTSEC	(P_DEFINED | P_IDENT(GPIO_PF17))
+arch/arm/mach-ks8695/include/mach/regs-wan.h:26:#define KS8695_WMDTSC		(0x08)		/* DMA Transmit Start Command */
+arch/arm/mach-ks8695/include/mach/regs-lan.h:26:#define KS8695_LMDTSC		(0x08)		/* DMA Transmit Start Command */
+arch/arm/common/sa1111.c:74:#define AUDDTS			(40)
+arch/arm/mach-u300/timer.c:91:#define U300_TIMER_APP_DDTS					(0x0050)
+arch/arm/mach-u300/timer.c:92:#define U300_TIMER_APP_DDTS_TIMER_STATE_MASK			(0x0000000F)
+arch/arm/mach-u300/timer.c:93:#define U300_TIMER_APP_DDTS_TIMER_STATE_IDLE			(0x00000001)
+arch/arm/mach-u300/timer.c:94:#define U300_TIMER_APP_DDTS_TIMER_STATE_ACTIVE			(0x00000002)
+arch/arm/mach-u300/timer.c:95:#define U300_TIMER_APP_DDTS_ENABLE_IND				(0x00000010)
+arch/arm/mach-u300/timer.c:96:#define U300_TIMER_APP_DDTS_MODE_MASK				(0x00000020)
+arch/arm/mach-u300/timer.c:97:#define U300_TIMER_APP_DDTS_MODE_CONTINUOUS			(0x00000000)
+arch/arm/mach-u300/timer.c:98:#define U300_TIMER_APP_DDTS_MODE_ONE_SHOT			(0x00000020)
+arch/arm/mach-u300/timer.c:99:#define U300_TIMER_APP_DDTS_IRQ_ENABLED_IND			(0x00000040)
+arch/arm/mach-u300/timer.c:100:#define U300_TIMER_APP_DDTS_IRQ_PENDING_IND			(0x00000080)
+arch/arm/include/asm/hardware/sa1111.h:155: *    SADTSA            Serial Audio DMA Transmit Buffer Start Address A
+arch/arm/include/asm/hardware/sa1111.h:157: *    SADTSB            Serial Audio DMA Transmit Buffer Start Address B
+arch/arm/include/asm/hardware/sa1111.h:186:#define SA1111_SADTSA		0x38
+arch/arm/include/asm/hardware/sa1111.h:188:#define SA1111_SADTSB		0x40
+arch/arm/include/asm/hardware/sa1111.h:246:#define SASCR_DTS	(1<<16)
+arch/arm/mach-iop13xx/setup.c:607:	write_wdtsr(IOP13XX_WDTSR_WRITE_EN | IOP13XX_WDTCR_IB_RESET);
+arch/arm/mach-iop13xx/include/mach/iop13xx.h:39:/* WDTSR CP6 R8 Page 9 */
+arch/arm/mach-iop13xx/include/mach/iop13xx.h:504:#define IOP13XX_WDTSR_WRITE_EN	(1 << 31) /* used to speed up reset requests */
+arch/arm/boot/Makefile:20:ifneq ($(DTSSUBDIR),)
+arch/arm/boot/Makefile:21:DTSSUBDIR_INCS=$(foreach DIR, $(DTSSUBDIR), $(addsuffix /Makefile, $(addprefix $(srctree)/arch/arm/boot/dts/, $(DIR))))
+arch/arm/boot/Makefile:22:include $(DTSSUBDIR_INCS)
+arch/arm/boot/dts/imx53-pinfunc.h:10:#ifndef __DTS_IMX53_PINFUNC_H
+arch/arm/boot/dts/imx53-pinfunc.h:11:#define __DTS_IMX53_PINFUNC_H
+arch/arm/boot/dts/imx53-pinfunc.h:1189:#endif /* __DTS_IMX53_PINFUNC_H */
+arch/arm/boot/dts/spear300.dtsi:2: * DTS file for SPEAr300 SoC
+arch/arm/boot/dts/atlas6-evb.dts:2: * DTS file for CSR SiRFatlas6 Evaluation Board
+arch/arm/boot/dts/imx28-cfa10037.dts:14: * need to include the CFA-10036 DTS.
+arch/arm/boot/dts/spear1340-evb.dts:2: * DTS file for SPEAr1340 Evaluation Baord
+arch/arm/boot/dts/spear1310.dtsi:2: * DTS file for all SPEAr1310 SoCs
+arch/arm/boot/dts/imx35-pinfunc.h:10:#ifndef __DTS_IMX35_PINFUNC_H
+arch/arm/boot/dts/imx35-pinfunc.h:11:#define __DTS_IMX35_PINFUNC_H
+arch/arm/boot/dts/imx35-pinfunc.h:970:#endif /* __DTS_IMX35_PINFUNC_H */
+arch/arm/boot/dts/imx51-pinfunc.h:10:#ifndef __DTS_IMX51_PINFUNC_H
+arch/arm/boot/dts/imx51-pinfunc.h:11:#define __DTS_IMX51_PINFUNC_H
+arch/arm/boot/dts/imx51-pinfunc.h:773:#endif /* __DTS_IMX51_PINFUNC_H */
+arch/arm/boot/dts/prima2-evb.dts:2: * DTS file for CSR SiRFprimaII Evaluation Board
+arch/arm/boot/dts/imx6sl-pinfunc.h:10:#ifndef __DTS_IMX6SL_PINFUNC_H
+arch/arm/boot/dts/imx6sl-pinfunc.h:11:#define __DTS_IMX6SL_PINFUNC_H
+arch/arm/boot/dts/imx6sl-pinfunc.h:1077:#endif /* __DTS_IMX6SL_PINFUNC_H */
+arch/arm/boot/dts/spear320-hmi.dts:2: * DTS file for SPEAr320 Evaluation Baord
+arch/arm/boot/dts/atlas6.dtsi:2: * DTS file for CSR SiRFatlas6 SoC
+arch/arm/boot/dts/marco-evb.dts:2: * DTS file for CSR SiRFmarco Evaluation Board
+arch/arm/boot/dts/marco.dtsi:2: * DTS file for CSR SiRFmarco SoC
+arch/arm/boot/dts/prima2.dtsi:2: * DTS file for CSR SiRFprimaII SoC
+arch/arm/boot/dts/spear310-evb.dts:2: * DTS file for SPEAr310 Evaluation Baord
+arch/arm/boot/dts/spear3xx.dtsi:2: * DTS file for all SPEAr3xx SoCs
+arch/arm/boot/dts/spear1310-evb.dts:2: * DTS file for SPEAr1310 Evaluation Baord
+arch/arm/boot/dts/spear300-evb.dts:2: * DTS file for SPEAr300 Evaluation Baord
+arch/arm/boot/dts/imx28-cfa10049.dts:14: * need to include the CFA-10036 DTS.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_al10_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_al10_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l22_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l22_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l21_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l21_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_t2_a00l_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_t2_a00l_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l22_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l22_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_g760s_cl_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_g760s_cl_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l23_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l23_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l23_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l23_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_g760s_ul_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_g760s_ul_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_l04_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_l04_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul01_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul01_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_al00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_al00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul01_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul01_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_l04_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_l04_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_cl00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_cl00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_tl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_tl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_tl00h_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_tl00h_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_al00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_al00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_al00_vd/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_al00_vd/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_al00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_al00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_vb/huawei-fac.dtsi:1:/* < DTS201503100xxxx zhujie 20150327 begin */
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_vb/huawei-fac.dtsi:11:/* DTS201503100xxxx zhujie 20150327 end > */
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_cl00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_cl00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_cl_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_cl_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul01_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul01_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_cl00_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_cl00_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_al10_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_al10_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_t2_a01l_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_t2_a01l_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l21_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l21_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_al00_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_al00_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_al10_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_al10_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_cl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_cl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l21_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l21_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l23_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l23_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l22_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_l22_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_cl_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_cl_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_l01_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_l01_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_t2_a04l_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_t2_a04l_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_t2_a01w_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_t2_a01w_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_al00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_al00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul06_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul06_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_tl00_vd/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_tl00_vd/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_tl00h_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_tl00h_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul06_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul06_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul06_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul06_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_tl00h_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_tl00h_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_ul00_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_ul00_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_ul00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_l03_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_l03_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_l04_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ale_l04_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_l01_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_l01_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_ul00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_ul00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_cl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_cl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8916_g620_a1_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8916_g620_a1_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_vd/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_vd/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_vd/huawei-fac.dtsi:1:/* < DTS201503100xxxx zhujie 20150327 begin */
+arch/arm/boot/dts/qcom/huawei_msm8939_ath_cl00_vd/huawei-fac.dtsi:11:/* DTS201503100xxxx zhujie 20150327 end > */
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_l02_va/huawei.dtsi:3:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_l02_va/huawei.dtsi:7: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_ul00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_kiw_ul00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_tl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_tl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_cl00_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm/boot/dts/qcom/huawei_msm8939_rio_cl00_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm/boot/dts/qcom/msm8610-qrd.dtsi:16: * files and provide board specific overrides in the top level DTS
+arch/arm/boot/dts/spear310.dtsi:2: * DTS file for SPEAr310 SoC
+arch/arm/boot/dts/spear1340.dtsi:2: * DTS file for all SPEAr1340 SoCs
+arch/arm/boot/dts/spear320-evb.dts:2: * DTS file for SPEAr320 Evaluation Baord
+arch/arm/boot/dts/spear320.dtsi:2: * DTS file for SPEAr320 SoC
+arch/arm/boot/dts/imx6dl-pinfunc.h:10:#ifndef __DTS_IMX6DL_PINFUNC_H
+arch/arm/boot/dts/imx6dl-pinfunc.h:11:#define __DTS_IMX6DL_PINFUNC_H
+arch/arm/boot/dts/imx6dl-pinfunc.h:1085:#endif /* __DTS_IMX6DL_PINFUNC_H */
+arch/arm/boot/dts/imx6q-pinfunc.h:10:#ifndef __DTS_IMX6Q_PINFUNC_H
+arch/arm/boot/dts/imx6q-pinfunc.h:11:#define __DTS_IMX6Q_PINFUNC_H
+arch/arm/boot/dts/imx6q-pinfunc.h:1041:#endif /* __DTS_IMX6Q_PINFUNC_H */
+arch/arm/boot/dts/spear13xx.dtsi:2: * DTS file for all SPEAr13xx SoCs
+arch/arm/Makefile:283:DTSSUBDIR := qcom
+arch/arm/Makefile:306:	$(foreach DIR, $(DTSSUBDIR), $(Q)$(MAKE) $(build)=$(boot)/dts/$(DIR) MACHINE=$(MACHINE) dtbs)
+arch/arm/Makefile:309:	$(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) DTSSUBDIR=$(DTSSUBDIR) $(boot)/$@
+arch/x86/um/asm/barrier.h:63: * Stop RDTSC speculation. This is needed when you need to use RDTSC
+arch/x86/um/asm/barrier.h:71:	alternative(ASM_NOP3, "mfence", X86_FEATURE_MFENCE_RDTSC);
+arch/x86/um/asm/barrier.h:72:	alternative(ASM_NOP3, "lfence", X86_FEATURE_LFENCE_RDTSC);
+arch/x86/lib/x86-opcode-map.txt:374:31: RDTSC
+arch/x86/lib/x86-opcode-map.txt:870:7: INVLPG Mb | SWAPGS (o64),(000),(11B) | RDTSCP (001),(11B)
+arch/x86/Kconfig.cpu:55:	  assume the RDTSC (Read Time Stamp Counter) instruction.
+arch/x86/Kconfig.cpu:61:	  Select this for a Pentium Classic processor with the RDTSC (Read
+arch/x86/include/asm/vsyscall.h:7:#define VGETCPU_RDTSCP	1
+arch/x86/include/asm/vsyscall.h:32:	if (VVAR(vgetcpu_mode) == VGETCPU_RDTSCP) {
+arch/x86/include/asm/vsyscall.h:33:		/* Load per CPU data from RDTSCP */
+arch/x86/include/asm/svm.h:22:	INTERCEPT_RDTSC,
+arch/x86/include/asm/svm.h:47:	INTERCEPT_RDTSCP,
+arch/x86/include/asm/vmx.h:40:#define CPU_BASED_RDTSC_EXITING                 0x00001000
+arch/x86/include/asm/vmx.h:59:#define SECONDARY_EXEC_RDTSCP			0x00000008
+arch/x86/include/asm/cpufeature.h:61:#define X86_FEATURE_RDTSCP	(1*32+27) /* RDTSCP */
+arch/x86/include/asm/cpufeature.h:91:#define X86_FEATURE_MFENCE_RDTSC (3*32+17) /* "" Mfence synchronizes RDTSC */
+arch/x86/include/asm/cpufeature.h:92:#define X86_FEATURE_LFENCE_RDTSC (3*32+18) /* "" Lfence synchronizes RDTSC */
+arch/x86/include/asm/barrier.h:145: * Stop RDTSC speculation. This is needed when you need to use RDTSC
+arch/x86/include/asm/barrier.h:153:	alternative(ASM_NOP3, "mfence", X86_FEATURE_MFENCE_RDTSC);
+arch/x86/include/asm/barrier.h:154:	alternative(ASM_NOP3, "lfence", X86_FEATURE_LFENCE_RDTSC);
+arch/x86/include/asm/xen/interface_32.h:72:typedef uint64_t tsc_timestamp_t; /* RDTSC timestamp */
+arch/x86/include/asm/pvclock.h:78:	 * result in kvmclock not using the necessary RDTSC barriers.
+arch/x86/include/asm/pvclock.h:79:	 * Without barriers, it is possible that RDTSC instruction reads from
+arch/x86/include/uapi/asm/svm.h:43:#define SVM_EXIT_RDTSC         0x06e
+arch/x86/include/uapi/asm/svm.h:68:#define SVM_EXIT_RDTSCP        0x087
+arch/x86/include/uapi/asm/vmx.h:42:#define EXIT_REASON_RDTSC               16
+arch/x86/include/uapi/asm/vmx.h:85:	{ EXIT_REASON_RDTSC,                 "RDTSC" }, \
+arch/x86/kernel/cpu/intel.c:380:		set_cpu_cap(c, X86_FEATURE_LFENCE_RDTSC);
+arch/x86/kernel/cpu/centaur.c:467:	set_cpu_cap(c, X86_FEATURE_LFENCE_RDTSC);
+arch/x86/kernel/cpu/amd.c:670:		/* MFENCE stops RDTSC speculation */
+arch/x86/kernel/cpu/amd.c:671:		set_cpu_cap(c, X86_FEATURE_MFENCE_RDTSC);
+arch/x86/kernel/cpu/common.c:947:	if (cpu_has(&boot_cpu_data, X86_FEATURE_RDTSCP))
+arch/x86/kernel/cpu/common.c:948:		vgetcpu_mode = VGETCPU_RDTSCP;
+arch/x86/kernel/vsyscall_64.c:341:	if (cpu_has(&cpu_data(cpu), X86_FEATURE_RDTSCP))
+arch/x86/kvm/cpuid.c:203:	unsigned f_rdtscp = kvm_x86_ops->rdtscp_supported() ? F(RDTSCP) : 0;
+arch/x86/kvm/svm.c:4097:	[x86_intercept_rdtscp]		= POST_EX(SVM_EXIT_RDTSCP),
+arch/x86/kvm/svm.c:4104:	[x86_intercept_rdtsc]		= POST_EX(SVM_EXIT_RDTSC),
+arch/x86/kvm/vmx.c:993:		SECONDARY_EXEC_RDTSCP;
+arch/x86/kvm/vmx.c:2220:		CPU_BASED_RDPMC_EXITING | CPU_BASED_RDTSC_EXITING |
+arch/x86/kvm/vmx.c:2714:			SECONDARY_EXEC_RDTSCP |
+arch/x86/kvm/vmx.c:6505:	case EXIT_REASON_RDTSC:
+arch/x86/kvm/vmx.c:6506:		return nested_cpu_has(vmcs12, CPU_BASED_RDTSC_EXITING);
+arch/x86/kvm/vmx.c:7281:		if (exec_control & SECONDARY_EXEC_RDTSCP) {
+arch/x86/kvm/vmx.c:7283:			if (best && (best->edx & bit(X86_FEATURE_RDTSCP)))
+arch/x86/kvm/vmx.c:7286:				exec_control &= ~SECONDARY_EXEC_RDTSCP;
+arch/x86/kvm/vmx.c:7426:			exec_control &= ~SECONDARY_EXEC_RDTSCP;
+arch/x86/kvm/x86.c:1384: * RDTSC value.
+arch/arm64/configs/msm_defconfig:2657:# CONFIG_DTS_EAGLE is not set
+arch/arm64/configs/msm_defconfig:2659:CONFIG_DTS_SRS_TM=y
+arch/arm64/boot/dts/foundation-v8.dts:4: * ARMv8 Foundation model DTS
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_al10_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_al10_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l22_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l22_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l21_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l21_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_t2_a00l_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_t2_a00l_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l22_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l22_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_g760s_cl_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_g760s_cl_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l23_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l23_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l23_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l23_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_g760s_ul_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_g760s_ul_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_l04_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_l04_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul01_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul01_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_al00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_al00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul01_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul01_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_l04_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_l04_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_cl00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_cl00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_tl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_tl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_tl00h_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_tl00h_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_al00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_al00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_al00_vd/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_al00_vd/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_al00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_al00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_vb/huawei-fac.dtsi:1:/* < DTS201503100xxxx zhujie 20150327 begin */
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_vb/huawei-fac.dtsi:11:/* DTS201503100xxxx zhujie 20150327 end > */
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_cl00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_cl00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_cl_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_cl_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul01_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul01_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_cl00_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_cl00_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_al10_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_al10_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_t2_a01l_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_t2_a01l_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l21_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l21_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_al00_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_al00_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_al10_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_al10_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_cl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_cl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l21_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l21_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l23_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l23_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l22_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_l22_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_cl_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_cl_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_l01_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_l01_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_t2_a04l_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_t2_a04l_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_t2_a01w_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_t2_a01w_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_al00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_al00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul06_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul06_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_tl00_vd/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_tl00_vd/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_tl00h_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_tl00h_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul06_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul06_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul06_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul06_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_tl00h_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_tl00h_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_ul00_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_ul00_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_ul00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_l03_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_l03_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_l04_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ale_l04_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_l01_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_l01_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_ul00_vb/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_ul00_vb/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_cl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_cl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8916_g620_a1_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8916_g620_a1_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_vd/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_vd/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_vd/huawei-fac.dtsi:1:/* < DTS201503100xxxx zhujie 20150327 begin */
+arch/arm64/boot/dts/qcom/huawei_msm8939_ath_cl00_vd/huawei-fac.dtsi:11:/* DTS201503100xxxx zhujie 20150327 end > */
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_l02_va/huawei.dtsi:3:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_l02_va/huawei.dtsi:7: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_ul00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_kiw_ul00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_tl00_va/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_tl00_va/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_cl00_vc/huawei.dtsi:2:1.The "DTSxxx" just be allowed to  add at the begin and the tail.
+arch/arm64/boot/dts/qcom/huawei_msm8939_rio_cl00_vc/huawei.dtsi:6: and the other groups need to do some modify with DTSxxx.
+arch/arm64/boot/dts/qcom/msm8610-qrd.dtsi:16: * files and provide board specific overrides in the top level DTS
+arch/powerpc/platforms/cell/cbe_thermal.c:5: * Base for measurements are the digital thermal sensors (DTS)
+arch/powerpc/platforms/cell/cbe_thermal.c:14: *	contains the current temperature measured by the DTS
+arch/powerpc/platforms/cell/cbe_thermal.c:200:/* shows the temperature of the DTS on the PPE,
+arch/powerpc/platforms/cell/cbe_thermal.c:208:/* shows the temperature of the second DTS on the PPE */
+arch/powerpc/include/asm/mpc52xx_psc.h:120:#define MPC52xx_PSC_SICR_DTS1			(1 << 29)
+arch/powerpc/boot/Makefile:389:WRAPPER_DTSDIR := /usr/lib/kernel-wrapper/dts
+arch/powerpc/boot/Makefile:396:dts-installed		:= $(patsubst $(dtstree)/%, $(DESTDIR)$(WRAPPER_DTSDIR)/%, $(wildcard $(dtstree)/*.dts))
+arch/powerpc/boot/Makefile:406:quiet_cmd_install_dts	  = INSTALL $(patsubst $(DESTDIR)$(WRAPPER_DTSDIR)/%,dts/%,$@)
+arch/powerpc/boot/Makefile:407:      cmd_install_dts	  = $(INSTALL)  -m0644 $(patsubst $(DESTDIR)$(WRAPPER_DTSDIR)/%,$(srctree)/$(obj)/dts/%,$@) $@
+arch/powerpc/boot/Makefile:418:$(DESTDIR)$(WRAPPER_OBJDIR) $(DESTDIR)$(WRAPPER_DTSDIR) $(DESTDIR)$(WRAPPER_BINDIR):
+arch/powerpc/boot/Makefile:427:$(dts-installed)	: $(DESTDIR)$(WRAPPER_DTSDIR)/% : $(srctree)/$(obj)/dts/% | $(DESTDIR)$(WRAPPER_DTSDIR)
+arch/powerpc/boot/dts/mucmc52.dts:131:				label = "DTS";
+arch/powerpc/boot/dts/storcenter.dts:7: * Based on the Kurobox DTS by G. Liakhovetski <g.liakhovetski@gmx.de>
+arch/powerpc/boot/dts/virtex440-ml510.dts:4: * This DTS file was created for the ml510_bsb1_pcores_ppc440 reference design.
+arch/powerpc/boot/dts/uc101.dts:122:				label = "DTS";
+Documentation/DocBook/media/fieldseq_bt.gif.b64:432:XgerfOUsb+98mf1QyqAjDTSvuc1vjvOc63znPO+5z39Oc3QI/FQJbrnRj75yCJ+b1ukm+W05XlSP
+Documentation/DocBook/media/dvb/audio.xml:107: #define AUDIO_CAP_DTS    1
+Documentation/DocBook/media/dvb/audio.xml:145: /&#x22C6;   15-13 audio coding mode (0=ac3, 2=mpeg1, 3=mpeg2ext, 4=LPCM, 6=DTS, &#x22C6;/
+Documentation/sound/alsa/ALSA-Configuration.txt:1557:    * Club3D Theatron DTS
+Documentation/sound/alsa/Audiophile-Usb.txt:16: - Added AC3/DTS passthru info
+Documentation/sound/alsa/Audiophile-Usb.txt:55: * The Do port additionally supports surround-encoded AC-3 and DTS passthrough, 
+Documentation/sound/alsa/Audiophile-Usb.txt:106: * hw:1,2 is Do in AC3/DTS passthrough mode
+Documentation/sound/alsa/Audiophile-Usb.txt:213:3.2.1.3 - AC3 w/ DTS passthru mode
+Documentation/sound/alsa/Audiophile-Usb.txt:219:   - AC3 with DTS passthru
+Documentation/sound/alsa/Audiophile-Usb.txt:222:The command line used to playback the AC3/DTS encoded .wav-files in this mode:
+Documentation/sound/alsa/Audiophile-Usb.txt:277:       | 0 | 0 | 0 | Di|24B|96K|DTS|SET|
+Documentation/sound/alsa/Audiophile-Usb.txt:283: * b1 is the "DTS" bit
+Documentation/sound/alsa/Audiophile-Usb.txt:284:   - it is set only for Digital output with DTS/AC3
+Documentation/sound/alsa/Audiophile-Usb.txt:362: * if DTS is chosen, only Interface 2 with AltSet nb.6 must be
+Documentation/hwmon/w83795:72: 29/ 30	| PECI/TSI (DTS1)	| 26h		| temp7
+Documentation/hwmon/w83795:73: 29/ 30	| PECI/TSI (DTS2)	| 27h		| temp8
+Documentation/hwmon/w83795:74: 29/ 30	| PECI/TSI (DTS3)	| 28h		| temp9
+Documentation/hwmon/w83795:75: 29/ 30	| PECI/TSI (DTS4)	| 29h		| temp10
+Documentation/hwmon/w83795:76: 29/ 30	| PECI/TSI (DTS5)	| 2Ah		| temp11
+Documentation/hwmon/w83795:77: 29/ 30	| PECI/TSI (DTS6)	| 2Bh		| temp12
+Documentation/hwmon/w83795:78: 29/ 30	| PECI/TSI (DTS7)	| 2Ch		| temp13
+Documentation/hwmon/w83795:79: 29/ 30	| PECI/TSI (DTS8)	| 2Dh		| temp14
+Documentation/hwmon/w83795:119:   23	| PECI (DTS1)		| 26h		| temp7
+Documentation/hwmon/w83795:120:   23	| PECI (DTS2)		| 27h		| temp8
+Documentation/hwmon/w83795:121:   23	| PECI (DTS3)		| 28h		| temp9
+Documentation/hwmon/w83795:122:   23	| PECI (DTS4)		| 29h		| temp10
+Documentation/hwmon/w83795:123:   23	| PECI (DTS5)		| 2Ah		| temp11
+Documentation/hwmon/w83795:124:   23	| PECI (DTS6)		| 2Bh		| temp12
+Documentation/hwmon/w83795:125:   23	| PECI (DTS7)		| 2Ch		| temp13
+Documentation/hwmon/w83795:126:   23	| PECI (DTS8)		| 2Dh		| temp14
+Documentation/hwmon/coretemp:20:This driver permits reading the DTS (Digital Temperature Sensor) embedded
+Documentation/arm/msm/msm_sharedmem.txt:201:DTS files will be looked up for shared buffer sizes for all the clients. The
+Documentation/arm/msm/qca1530.txt:55:The driver uses ARM DTS configuration for all items except RTC. The following
+Documentation/arm/msm/qca1530.txt:128:* Add clock configuration support via DTS.
+Documentation/devicetree/bindings/sound/qcom-audio-dev.txt:936:	DTSI file, as it is default option.
+Documentation/devicetree/bindings/powerpc/fsl/cpm_qe/qe.txt:85:The fsl,firmware property can be specified in the DTS (possibly using incbin)
+Documentation/devicetree/bindings/platform/msm/ipa.txt:55:                    will not appear in the IPA DTS entry, the driver will
+Documentation/kernel-parameters.txt:3100:			platforms where RDTSC is slow and this accounting
+Documentation/kbuild/makefiles.txt:1206:	which sets macro __ASSEMBLY__. __DTS__ is also set. These allow header
+Documentation/virtual/kvm/timekeeping.txt:320:RDMSR, RDTSC, or RDTSCP (when available) instructions.  In the past, hardware
+Documentation/virtual/kvm/timekeeping.txt:331:Some vendors have implemented an additional instruction, RDTSCP, which returns
+Documentation/virtual/kvm/timekeeping.txt:428:VMX provides conditional trapping of RDTSC, RDMSR, WRMSR and RDTSCP
+Documentation/virtual/kvm/timekeeping.txt:436:SVM provides conditional trapping of RDTSC, RDMSR, WRMSR and RDTSCP
+Documentation/virtual/kvm/timekeeping.txt:452:X86_FEATURE_RDTSCP		: The RDTSCP instruction is available
+Documentation/networking/phy.txt:65: drivers/net/ethernet/freescale/fsl_pq_mdio.c and an associated DTS file
+drivers/of/of_net.c:66: * the register set, but some DTS files have redefined that property to be the
+drivers/of/of_net.c:71: * DTS could define 'mac-address' and 'local-mac-address', with zero MAC
+drivers/gpu/drm/radeon/rv770d.h:617:#define AZ_F0_CODEC_PIN0_CONTROL_AUDIO_DESCRIPTOR6        0x71e0 /* DTS */
+drivers/gpu/drm/radeon/rv770d.h:621:#define AZ_F0_CODEC_PIN0_CONTROL_AUDIO_DESCRIPTOR10       0x71f0 /* DTS-HD */
+drivers/gpu/drm/radeon/rv770d.h:623:#define AZ_F0_CODEC_PIN0_CONTROL_AUDIO_DESCRIPTOR12       0x71f8 /* DTS */
+drivers/gpu/drm/radeon/evergreen_hdmi.c:72:		{ AZ_F0_CODEC_PIN0_CONTROL_AUDIO_DESCRIPTOR6, HDMI_AUDIO_CODING_TYPE_DTS },
+drivers/gpu/drm/radeon/evergreen_hdmi.c:75:		{ AZ_F0_CODEC_PIN0_CONTROL_AUDIO_DESCRIPTOR10, HDMI_AUDIO_CODING_TYPE_DTS_HD },
+drivers/gpu/drm/radeon/evergreend.h:405:#define AZ_F0_CODEC_PIN0_CONTROL_AUDIO_DESCRIPTOR6        0x5f9c /* DTS */
+drivers/gpu/drm/radeon/evergreend.h:409:#define AZ_F0_CODEC_PIN0_CONTROL_AUDIO_DESCRIPTOR10       0x5fac /* DTS-HD */
+drivers/gpu/drm/radeon/evergreend.h:411:#define AZ_F0_CODEC_PIN0_CONTROL_AUDIO_DESCRIPTOR12       0x5fb4 /* DTS */
+drivers/rapidio/switches/idt_gen2.c:432:DECLARE_RIO_SWITCH_INIT(RIO_VID_IDT, RIO_DID_IDTSPS1616, idtg2_switch_init);
+drivers/crypto/msm/qcrypto_fips.c:95:		calls always go to h/w, independent of DTSI flags. */
+drivers/crypto/msm/qcrypto_fips.c:225:		calls always go to h/w, independent of DTSI flags. */
+drivers/crypto/msm/qcrypto_fips.c:384:		calls always go to h/w, independent of DTSI flags. */
+drivers/net/wireless/rtl818x/rtl818x.h:73:#define RTL818X_TX_CONF_PROBE_DTS	(1 << 29)
+drivers/net/wireless/rtl818x/rtl8180/dev.c:625:		reg &= ~RTL818X_TX_CONF_PROBE_DTS;
+drivers/net/wireless/ath/ath6kl/wmi.c:1514:		 * ADDTS request when this event is received
+drivers/net/wireless/b43/phy_n.h:499:#define B43_NPHY_VLD_DTSIG			B43_PHY_N(0x159) /* VLD data tones sig */
+drivers/net/wireless/b43/radio_2055.c:174:  [B2055_C1_TX_RF_PADTSSI1]	= { .ghz5 = 0x0003, .ghz2 = 0x0003, UPLOAD, },
+drivers/net/wireless/b43/radio_2055.c:175:  [B2055_C1_TX_RF_PADTSSI2]	= { .ghz5 = 0x000A, .ghz2 = 0x000A, NOUPLOAD, },
+drivers/net/wireless/b43/radio_2055.c:221:  [B2055_C2_TX_RF_PADTSSI1]	= { .ghz5 = 0x0003, .ghz2 = 0x0003, UPLOAD, },
+drivers/net/wireless/b43/radio_2055.c:222:  [B2055_C2_TX_RF_PADTSSI2]	= { .ghz5 = 0x000A, .ghz2 = 0x000A, NOUPLOAD, },
+drivers/net/wireless/b43/radio_2055.h:139:#define B2055_C1_TX_RF_PADTSSI1		0x84 /* Core 1 TX RF PAD TSSI1 */
+drivers/net/wireless/b43/radio_2055.h:140:#define B2055_C1_TX_RF_PADTSSI2		0x85 /* Core 1 TX RF PAD TSSI2 */
+drivers/net/wireless/b43/radio_2055.h:186:#define B2055_C2_TX_RF_PADTSSI1		0xB3 /* Core 2 TX RF PAD TSSI1 */
+drivers/net/wireless/b43/radio_2055.h:187:#define B2055_C2_TX_RF_PADTSSI2		0xB4 /* Core 2 TX RF PAD TSSI2 */
+drivers/net/wireless/brcm80211/brcmfmac/fweh.h:61:	BRCMF_ENUM_DEF(ADDTS_IND, 27) \
+drivers/net/can/cc770/cc770_platform.c:31: * DTS file similar to:
+drivers/net/can/sja1000/sja1000_of_platform.c:22: * definition in your flattened device tree source (DTS) file similar to:
+drivers/net/ethernet/micrel/ks8695net.c:1209:	ks8695_writereg(ksp, KS8695_DTSC, 0);
+drivers/net/ethernet/micrel/ks8695net.h:49:#define KS8695_DTSC		(0x08)		/* DMA Transmit Start Command */
+drivers/net/ethernet/broadcom/bnx2x/bnx2x_reg.h:3281:#define PXP2_REG_PGL_TXW_CDTS					 0x12052c
+drivers/net/ethernet/atheros/atl1c/atl1c_hw.h:829:#define MII_CDTS			0x1C
+drivers/net/ethernet/atheros/atl1c/atl1c_hw.h:830:#define CDTS_STATUS_OFF			8
+drivers/net/ethernet/atheros/atl1c/atl1c_hw.h:831:#define CDTS_STATUS_BITS		2
+drivers/net/ethernet/atheros/atl1c/atl1c_hw.h:832:#define CDTS_STATUS_NORMAL		0
+drivers/net/ethernet/atheros/atl1c/atl1c_hw.h:833:#define CDTS_STATUS_SHORT		1
+drivers/net/ethernet/atheros/atl1c/atl1c_hw.h:834:#define CDTS_STATUS_OPEN		2
+drivers/net/ethernet/atheros/atl1c/atl1c_hw.h:835:#define CDTS_STATUS_INVALID		3
+drivers/net/ethernet/via/via-velocity.h:712:#define CFGC_DTSEL          0x10
+drivers/net/wan/z85230.c:292: *	z8530_rtsdtr - Control the outgoing DTS/RTS line
+drivers/hwmon/w83627ehf.c:271:	"AMDTSI",
+drivers/hwmon/w83795.c:221:#define W83795_REG_DTSC			0x301
+drivers/hwmon/w83795.c:222:#define W83795_REG_DTSE			0x302
+drivers/hwmon/w83795.c:223:#define W83795_REG_DTS(index)		(0x26 + (index))
+drivers/hwmon/w83795.c:226:#define DTS_CRIT			0
+drivers/hwmon/w83795.c:227:#define DTS_CRIT_HYST			1
+drivers/hwmon/w83795.c:228:#define DTS_WARN			2
+drivers/hwmon/w83795.c:229:#define DTS_WARN_HYST			3
+drivers/hwmon/w83795.c:230:#define W83795_REG_DTS_EXT(index)	(0xB2 + (index))
+drivers/hwmon/w83795.c:364:	u8 has_dts;		/* Enable monitor DTS temp */
+drivers/hwmon/w83795.c:519:	/* Read the DTS limits */
+drivers/hwmon/w83795.c:521:		for (limit = DTS_CRIT; limit <= DTS_WARN_HYST; limit++)
+drivers/hwmon/w83795.c:523:				w83795_read(client, W83795_REG_DTS_EXT(limit));
+drivers/hwmon/w83795.c:668:				w83795_read(client, W83795_REG_DTS(i));
+drivers/hwmon/w83795.c:1424:	w83795_write(client, W83795_REG_DTS_EXT(nr), data->dts_ext[nr]);
+drivers/hwmon/w83795.c:1673:#define SENSOR_ATTR_DTS(index) {					\
+drivers/hwmon/w83795.c:1679:		store_dts_ext, DTS_CRIT, NOT_USED),			\
+drivers/hwmon/w83795.c:1681:		show_dts_ext, store_dts_ext, DTS_CRIT_HYST, NOT_USED),	\
+drivers/hwmon/w83795.c:1683:		store_dts_ext, DTS_WARN, NOT_USED),			\
+drivers/hwmon/w83795.c:1685:		show_dts_ext, store_dts_ext, DTS_WARN_HYST, NOT_USED),	\
+drivers/hwmon/w83795.c:1809:	SENSOR_ATTR_DTS(7),
+drivers/hwmon/w83795.c:1810:	SENSOR_ATTR_DTS(8),
+drivers/hwmon/w83795.c:1811:	SENSOR_ATTR_DTS(9),
+drivers/hwmon/w83795.c:1812:	SENSOR_ATTR_DTS(10),
+drivers/hwmon/w83795.c:1813:	SENSOR_ATTR_DTS(11),
+drivers/hwmon/w83795.c:1814:	SENSOR_ATTR_DTS(12),
+drivers/hwmon/w83795.c:1815:	SENSOR_ATTR_DTS(13),
+drivers/hwmon/w83795.c:1816:	SENSOR_ATTR_DTS(14),
+drivers/hwmon/w83795.c:2191:	/* Check DTS enable status */
+drivers/hwmon/w83795.c:2193:		if (1 & w83795_read(client, W83795_REG_DTSC))
+drivers/hwmon/w83795.c:2195:		data->has_dts = w83795_read(client, W83795_REG_DTSE);
+drivers/hwmon/coretemp.c:706:		 * Alright, we have DTS support.
+drivers/mtd/nand/atmel_nand.c:939: * If pmecc-cap, pmecc-sector-size in DTS are not specified, this function
+drivers/mtd/nand/atmel_nand.c:941: * value in DTS file.
+drivers/staging/keucr/smilsub.c:60:	for (i = 0; i < REDTSIZE; i++)
+drivers/staging/keucr/smilsub.c:138:	for (i = 0; i < REDTSIZE; i++)
+drivers/staging/keucr/smilsub.c:162:	for (i = 0; i < REDTSIZE; i++)
+drivers/staging/keucr/smil.h:10:#define REDTSIZE            16     /* Redundant buffer size */
+drivers/staging/keucr/smilmain.c:52:static BYTE  Redundant[REDTSIZE];
+drivers/staging/keucr/smilmain.c:53:static BYTE  WorkRedund[REDTSIZE];
+drivers/staging/keucr/smilmain.c:1789://    for (i=0; i<REDTSIZE; i++)
+drivers/staging/rtl8192u/ieee80211/ieee80211.h:510:	ACT_ADDTSREQ = 0,
+drivers/staging/rtl8192u/ieee80211/ieee80211.h:511:	ACT_ADDTSRSP = 1,
+drivers/staging/rtl8192u/ieee80211/rtl819x_TSProc.c:9:	// This is used for WMMSA and ACM , that would send ADDTSReq frame.
+drivers/staging/crystalhd/bc_dts_glob_lnx.h:28:#ifndef _BC_DTS_GLOB_LNX_H_
+drivers/staging/crystalhd/bc_dts_glob_lnx.h:29:#define _BC_DTS_GLOB_LNX_H_
+drivers/staging/crystalhd/bc_dts_glob_lnx.h:60:enum BC_DTS_GLOBALS {
+drivers/staging/crystalhd/bc_dts_glob_lnx.h:127:struct BC_DTS_STATS {
+drivers/staging/crystalhd/bc_dts_glob_lnx.h:219:		struct BC_DTS_STATS	drvStat;
+drivers/staging/crystalhd/crystalhd_cmds.c:63:		if (ctx->user[i].mode == DTS_DIAG_MODE ||
+drivers/staging/crystalhd/crystalhd_cmds.c:64:		    ctx->user[i].mode == DTS_PLAYBACK_MODE) {
+drivers/staging/crystalhd/crystalhd_cmds.c:81:	if (ctx->user[idata->u_id].mode != DTS_MODE_INV) {
+drivers/staging/crystalhd/crystalhd_cmds.c:85:	if (idata->udata.u.NotifyMode.Mode == DTS_MONITOR_MODE) {
+drivers/staging/crystalhd/crystalhd_cmds.c:95:		if (ctx->user[i].mode == DTS_DIAG_MODE ||
+drivers/staging/crystalhd/crystalhd_cmds.c:96:		    ctx->user[i].mode == DTS_PLAYBACK_MODE) {
+drivers/staging/crystalhd/crystalhd_cmds.c:689:	struct BC_DTS_STATS *stats;
+drivers/staging/crystalhd/crystalhd_cmds.c:923:	ctx->user[uc->uid].mode = DTS_MODE_INV;
+drivers/staging/crystalhd/crystalhd_cmds.c:930:	if ((mode == DTS_DIAG_MODE) || (mode == DTS_PLAYBACK_MODE)) {
+drivers/staging/crystalhd/crystalhd_cmds.c:971:		ctx->user[i].mode = DTS_MODE_INV;
+drivers/staging/crystalhd/crystalhd_cmds.c:1030:			if ((uc->mode == DTS_MONITOR_MODE) &&
+drivers/staging/crystalhd/crystalhd_cmds.h:55:#define DTS_MODE_INV	(-1)
+drivers/staging/crystalhd/bc_dts_defs.h:26:#ifndef _BC_DTS_DEFS_H_
+drivers/staging/crystalhd/bc_dts_defs.h:27:#define _BC_DTS_DEFS_H_
+drivers/staging/crystalhd/bc_dts_defs.h:112:	DTS_PLAYBACK_MODE = 0,
+drivers/staging/crystalhd/bc_dts_defs.h:113:	DTS_DIAG_MODE,
+drivers/staging/crystalhd/bc_dts_defs.h:114:	DTS_MONITOR_MODE,
+drivers/staging/crystalhd/bc_dts_defs.h:115:	DTS_HWINIT_MODE
+drivers/staging/crystalhd/bc_dts_defs.h:120:	DTS_LOAD_NEW_FW		= BC_BIT(8),
+drivers/staging/crystalhd/bc_dts_defs.h:121:	DTS_LOAD_FILE_PLAY_FW	= BC_BIT(9),
+drivers/staging/crystalhd/bc_dts_defs.h:122:	DTS_DISK_FMT_BD		= BC_BIT(10),
+drivers/staging/crystalhd/bc_dts_defs.h:124:	DTS_SKIP_TX_CHK_CPB	= BC_BIT(16),
+drivers/staging/crystalhd/bc_dts_defs.h:125:	DTS_ADAPTIVE_OUTPUT_PER	= BC_BIT(17),
+drivers/staging/crystalhd/bc_dts_defs.h:126:	DTS_INTELLIMAP		= BC_BIT(18),
+drivers/staging/crystalhd/bc_dts_defs.h:128:	DTS_PLAYBACK_DROP_RPT_MODE = BC_BIT(22)
+drivers/staging/crystalhd/bc_dts_defs.h:131:#define DTS_DFLT_RESOLUTION(x)	(x<<11)
+drivers/staging/crystalhd/bc_dts_defs.h:133:#define DTS_DFLT_CLOCK(x) (x<<19)
+drivers/staging/crystalhd/bc_dts_defs.h:477: * struct BC_DTS_PROC_OUT
+drivers/staging/crystalhd/bc_dts_defs.h:491:struct BC_DTS_PROC_OUT {
+drivers/staging/crystalhd/bc_dts_defs.h:521: * struct BC_DTS_STATUS
+drivers/staging/crystalhd/bc_dts_defs.h:541:struct BC_DTS_STATUS {
+drivers/staging/crystalhd/bc_dts_defs.h:572:#endif	/* _BC_DTS_DEFS_H_ */
+drivers/staging/media/lirc/lirc_serial.c:363:#ifdef USE_RDTSC
+drivers/staging/media/lirc/lirc_serial.c:412:#else /* ! USE_RDTSC */
+drivers/staging/media/lirc/lirc_serial.c:435:#endif /* USE_RDTSC */
+drivers/staging/media/lirc/lirc_serial.c:480:#ifdef USE_RDTSC
+drivers/staging/media/lirc/lirc_serial.c:530:#else /* ! USE_RDTSC */
+drivers/staging/media/lirc/lirc_serial.c:568:#endif /* USE_RDTSC */
+drivers/staging/rtl8192e/rtl819x_Qos.h:135:#define ADDTS_TIME_SLOT				100
+drivers/staging/rtl8192e/rtl819x_Qos.h:185:	QOSIE_SRC_ADDTSREQ,
+drivers/staging/rtl8192e/rtl819x_Qos.h:186:	QOSIE_SRC_ADDTSRSP,
+drivers/staging/rtl8192e/rtllib.h:639:	ACT_ADDTSREQ = 0,
+drivers/staging/rtl8192e/rtllib.h:640:	ACT_ADDTSRSP = 1,
+drivers/staging/csr/drv.c:1148:          case UNIFI_CFG_WMM_ADDTS:
+drivers/staging/csr/unifiio.h:255:    UNIFI_CFG_WMM_ADDTS,
+drivers/mmc/core/sdio.c:413:		return SDIO_DTSx_SET_TYPE_A;
+drivers/mmc/core/sdio.c:415:		return SDIO_DTSx_SET_TYPE_B;
+drivers/mmc/core/sdio.c:417:		return SDIO_DTSx_SET_TYPE_C;
+drivers/mmc/core/sdio.c:419:		return SDIO_DTSx_SET_TYPE_D;
+drivers/mmc/core/sdio.c:421:		return SDIO_DTSx_SET_TYPE_B;
+drivers/mmc/core/sdio.c:481:	card_strength &= ~(SDIO_DRIVE_DTSx_MASK<<SDIO_DRIVE_DTSx_SHIFT);
+drivers/media/dvb-core/dvb_filter.h:87:#define PTS_DTS_FLAGS    0xC0
+drivers/media/dvb-core/dvb_filter.h:97:#define PTS_DTS          0xC0
+drivers/media/pci/ttpci/av7110_ipack.c:344:					if ((p->flag2 & PTS_DTS_FLAGS) == PTS_ONLY) {
+drivers/media/pci/ttpci/av7110_ipack.c:355:					} else if ((p->flag2 & PTS_DTS_FLAGS) == PTS_DTS) {
+drivers/media/pci/ttpci/av7110_av.c:57:#define PTS_DTS_FLAGS	 0xC0
+drivers/media/pci/ttpci/av7110_av.c:61:#define PTS_DTS		 0xC0
+drivers/media/pci/ttpci/av7110_av.c:1423:			*(unsigned int *)parg = AUDIO_CAP_LPCM | AUDIO_CAP_DTS | AUDIO_CAP_AC3 |
+drivers/media/pci/cx18/cx18-fileops.c:329:				/* Check if a PTS or PTS & DTS follow */
+drivers/media/pci/cx18/cx18-fileops.c:332:				    ((q[7] & 0xc0) == 0xc0 &&  /* PTS & DTS */
+drivers/media/pci/cx18/cx18-fileops.c:333:				     (q[9] & 0xf0) == 0x30)) { /* DTS follows */
+drivers/media/platform/msm/dvb/include/mpq_adapter.h:51:	/** Indication whether DTS exist */
+drivers/media/platform/msm/dvb/include/mpq_adapter.h:57:	/** DTS value associated with the PES data if any */
+drivers/media/platform/msm/dvb/include/mpq_adapter.h:65:	/** PTS/DTS information */
+drivers/media/platform/msm/dvb/include/mpq_adapter.h:91:	/** PTS/DTS information */
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.c:2089:	/* Get PTS/DTS information from PES header */
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.c:2168:	/* Did we capture the DTS value (if exist)? */
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.c:2193:		/* else - we have the DTS */
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.c:2204:	/* get PTS/DTS information from PES header to be written later */
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:286: * @saved_pts_dts_info: used to save PTS/DTS information until it is written.
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:287: * @new_pts_dts_info: used to store PTS/DTS information from current PES header.
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:288: * @saved_info_used: indicates if saved PTS/DTS information was used.
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:289: * @new_info_exists: indicates if new PTS/DTS information exists in
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:291: * @first_pts_dts_copy: a flag used to indicate if PTS/DTS information needs
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:944: * mpq_dmx_save_pts_dts() - Save the current PTS/DTS data
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:946: * @feed_data: Video feed structure where PTS/DTS is saved
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:966: * mpq_dmx_write_pts_dts() - Write out the saved PTS/DTS data and mark as used
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:968: * @feed_data:	Video feed structure where PTS/DTS was saved
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_common.h:969: * @info:	PTS/DTS stucture to write to
+drivers/media/platform/msm/dvb/demux/mpq_dmx_plugin_tspp_v2.c:3499:	/* Get the PTS/DTS fields of the video PES header */
+drivers/pinctrl/pinctrl-single.c:82: * @name:	property name in DTS file
+drivers/pinctrl/pinctrl-single.c:396:	/* If pin is not described in DTS & enabled, mux_setting is NULL. */
+drivers/watchdog/it87_wdt.c:133:#define WDTS_TIMER_RUN	0
+drivers/watchdog/it87_wdt.c:134:#define WDTS_DEV_OPEN	1
+drivers/watchdog/it87_wdt.c:135:#define WDTS_KEEPALIVE	2
+drivers/watchdog/it87_wdt.c:136:#define WDTS_LOCKED	3
+drivers/watchdog/it87_wdt.c:137:#define WDTS_USE_GP	4
+drivers/watchdog/it87_wdt.c:138:#define WDTS_EXPECTED	5
+drivers/watchdog/it87_wdt.c:259:	if (test_bit(WDTS_USE_GP, &wdt_status))
+drivers/watchdog/it87_wdt.c:264:	set_bit(WDTS_KEEPALIVE, &wdt_status);
+drivers/watchdog/it87_wdt.c:274:	if (test_bit(WDTS_USE_GP, &wdt_status))
+drivers/watchdog/it87_wdt.c:322:	if (test_bit(WDTS_TIMER_RUN, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:358:			clear_bit(WDTS_TIMER_RUN, &wdt_status);
+drivers/watchdog/it87_wdt.c:364:	if (test_and_clear_bit(WDTS_KEEPALIVE, &wdt_status))
+drivers/watchdog/it87_wdt.c:366:	if (test_bit(WDTS_EXPECTED, &wdt_status))
+drivers/watchdog/it87_wdt.c:385:	if (exclusive && test_and_set_bit(WDTS_DEV_OPEN, &wdt_status))
+drivers/watchdog/it87_wdt.c:387:	if (!test_and_set_bit(WDTS_TIMER_RUN, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:389:		if (nowayout && !test_and_set_bit(WDTS_LOCKED, &wdt_status))
+drivers/watchdog/it87_wdt.c:394:			clear_bit(WDTS_LOCKED, &wdt_status);
+drivers/watchdog/it87_wdt.c:395:			clear_bit(WDTS_TIMER_RUN, &wdt_status);
+drivers/watchdog/it87_wdt.c:396:			clear_bit(WDTS_DEV_OPEN, &wdt_status);
+drivers/watchdog/it87_wdt.c:418:	if (test_bit(WDTS_TIMER_RUN, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:419:		if (test_and_clear_bit(WDTS_EXPECTED, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:426:				set_bit(WDTS_EXPECTED, &wdt_status);
+drivers/watchdog/it87_wdt.c:430:			clear_bit(WDTS_TIMER_RUN, &wdt_status);
+drivers/watchdog/it87_wdt.c:436:	clear_bit(WDTS_DEV_OPEN, &wdt_status);
+drivers/watchdog/it87_wdt.c:457:		clear_bit(WDTS_EXPECTED, &wdt_status);
+drivers/watchdog/it87_wdt.c:469:				set_bit(WDTS_EXPECTED, &wdt_status);
+drivers/watchdog/it87_wdt.c:527:			if (test_bit(WDTS_TIMER_RUN, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:532:			clear_bit(WDTS_TIMER_RUN, &wdt_status);
+drivers/watchdog/it87_wdt.c:536:			if (!test_and_set_bit(WDTS_TIMER_RUN, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:539:					clear_bit(WDTS_TIMER_RUN, &wdt_status);
+drivers/watchdog/it87_wdt.c:657:			set_bit(WDTS_USE_GP, &wdt_status);
+drivers/watchdog/it87_wdt.c:663:	if (!test_bit(WDTS_USE_GP, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:710:	if (!test_bit(WDTS_USE_GP, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:730:	release_region(base, test_bit(WDTS_USE_GP, &wdt_status) ? 1 : 8);
+drivers/watchdog/it87_wdt.c:731:	if (!test_bit(WDTS_USE_GP, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:754:		if (test_bit(WDTS_USE_GP, &wdt_status)) {
+drivers/watchdog/it87_wdt.c:766:	release_region(base, test_bit(WDTS_USE_GP, &wdt_status) ? 1 : 8);
+drivers/platform/x86/compal-laptop.c:128:#define TEMP_CPU_DTS			0xB5
+drivers/platform/x86/compal-laptop.c:504:TEMPERATURE_SHOW_TEMP_AND_LABEL(cpu_DTS,    TEMP_CPU_DTS,    "CPU_DTS");
+drivers/platform/x86/compal-laptop.c:670:static SENSOR_DEVICE_ATTR(temp3_input, S_IRUGO, temp_cpu_DTS,      NULL, 1);
+drivers/platform/x86/compal-laptop.c:676:static SENSOR_DEVICE_ATTR(temp3_label, S_IRUGO, label_cpu_DTS,     NULL, 1);
+drivers/platform/msm/qca1530.c:36:/* SoC power regulator prefix for DTS */
+drivers/platform/msm/qca1530.c:38:/* SoC optional power regulator prefix for DTS */
+drivers/platform/msm/qca1530.c:40:/* SoC power regulator pin for DTS */
+drivers/platform/msm/qca1530.c:42:/* Reset power regulator prefix for DTS */
+drivers/platform/msm/qca1530.c:44:/* Reset pin name for DTS */
+drivers/platform/msm/qca1530.c:46:/* Clock pin name for DTS */
+drivers/platform/msm/qca1530.c:48:/* xLNA power regulator prefix for DTS */
+drivers/platform/msm/qca1530.c:50:/* xLNA voltage property name in DTS */
+drivers/platform/msm/qca1530.c:52:/* xLNA current property name in DTS */
+drivers/platform/msm/qca1530.c:54:/* xLNA pin name for DTS */
+drivers/platform/msm/qca1530.c:466: * @name: regulator name prefix in DTS file
+drivers/platform/msm/qca1530.c:469: * Function initializes power regulator if DTS configuration is present.
+drivers/platform/msm/qca1530.c:737: * Function allocates xLNA resources according to DTS configuration.
+drivers/platform/msm/qca1530.c:1099: * qca1530_of_match - DTS driver name
+drivers/usb/switch/switch_usb_class.c:316://Config DTS information
+drivers/misc/pti.c:138:	aperture += PTI_LASTDWORD_DTS;	/* adding DTS signals that is EOM */
+drivers/misc/qcom/qdsp6v2/audio_aac.c:65:		case AUDIO_AAC_FORMAT_ADTS:
+drivers/misc/qcom/qdsp6v2/aac_in.c:35:#define AAC_FORMAT_ADTS 65535
+drivers/misc/qcom/qdsp6v2/aac_in.c:173:			cfg->stream_format = AUDIO_AAC_FORMAT_ADTS;
+drivers/misc/qcom/qdsp6v2/aac_in.c:207:		case AUDIO_AAC_FORMAT_ADTS:
+drivers/misc/qcom/qdsp6v2/aac_in.c:595:	enc_cfg->stream_format = 0x00;/* 0:ADTS, 3:RAW */
+drivers/misc/qcom/qdsp6v2/aac_in.c:600:	aac_config->format = AUDIO_AAC_FORMAT_ADTS;
+drivers/misc/qcom/qdsp6v2/audio_multi_aac.c:79:		case AUDIO_AAC_FORMAT_ADTS:
+drivers/edac/amd8111_edac.h:75:	PCI_INTBRG_CTRL_DTSERREN	= BIT(27),
+drivers/edac/amd8111_edac.h:76:	PCI_INTBRG_CTRL_DTSTAT		= BIT(26),
+drivers/edac/amd8111_edac.h:80:	PCI_INTBRG_CTRL_CLEAR_MASK	= (PCI_INTBRG_CTRL_DTSTAT),
+drivers/edac/amd8111_edac.h:81:	PCI_INTBRG_CTRL_POLL_MASK	= (PCI_INTBRG_CTRL_DTSERREN |
+drivers/edac/amd8131_edac.h:46:	INT_CTLR_DTSE	= BIT(27),
+drivers/edac/amd8131_edac.h:47:	INT_CTLR_DTS	= BIT(26),
+drivers/edac/amd8131_edac.c:105:	if (val32 & INT_CTLR_DTS)
+drivers/edac/amd8131_edac.c:125:	val32 |= INT_CTLR_PERR | INT_CTLR_SERR | INT_CTLR_DTSE;
+drivers/edac/amd8131_edac.c:149:	/* Disable SERR, PERR and DTSE Error detection */
+drivers/edac/amd8131_edac.c:151:	val32 &= ~(INT_CTLR_PERR | INT_CTLR_SERR | INT_CTLR_DTSE);
+drivers/edac/amd8131_edac.c:198:	if (val32 & INT_CTLR_DTS) {
+drivers/edac/amd8131_edac.c:201:		printk(KERN_INFO "DTS: %d\n", val32 & INT_CTLR_DTS);
+drivers/edac/amd8131_edac.c:203:		val32 |= INT_CTLR_DTS;
+drivers/edac/amd8111_edac.c:162:		/* Disable DTSERREN/MARSP/SERREN in Interrupt Control reg */
+drivers/edac/amd8111_edac.c:207:	if (val32 & PCI_INTBRG_CTRL_DTSTAT) {
+drivers/edac/amd8111_edac.c:210:		printk(KERN_INFO "DTSTAT: %d\n",
+drivers/edac/amd8111_edac.c:211:			(val32 & PCI_INTBRG_CTRL_DTSTAT) != 0);
+drivers/edac/amd8111_edac.c:213:		val32 |= PCI_INTBRG_CTRL_DTSTAT;
+drivers/huawei_platform/sensor/lpsensor/rohm_bh1745.c:50:#define PARSE_DTSI_NUMBER                               (22)
+drivers/huawei_platform/sensor/lpsensor/rohm_bh1745.c:1446:		if (array_len != PARSE_DTSI_NUMBER) {
+drivers/huawei_platform/touchscreen/focaltech_6x36/ft6x06_ts.c:772:*@dev the client->dev which is read from DTS.
+drivers/huawei_platform/touchscreen/gt9xx/gt9xx_openshort.c:2301:/*To get the default capacitance threshold value if DTSI configuration is invalid*/
+drivers/huawei_platform/touchscreen/gt9xx/gt9xx_openshort.c:2360:    tp_log_err("%s,DTSI configuration is invalid\n",__func__);
+drivers/huawei_platform/touchscreen/synaptics_dsx_s3207/synaptics_dsx_i2c.c:6179: * get_of_u32_val() - get the u32 type value fro the DTSI.
+drivers/huawei_platform/touchscreen/synaptics_dsx_s3207/synaptics_dsx_i2c.c:6181: * @name: The DTSI key name
+drivers/huawei_platform/touchscreen/synaptics_dsx_s3207/synaptics_dsx_test_reporting.c:4263: * get_of_u32_val() - get the u32 type value fro the DTSI.
+drivers/huawei_platform/touchscreen/synaptics_dsx_s3207/synaptics_dsx_test_reporting.c:4265: * @name: The DTSI key name
+drivers/huawei_platform/touchscreen/synaptics_dsx_s3207/synaptics_dsx_test_reporting.c:4389:/*To get the default capacitance threshold value if DTSI configuration is invalid*/
+drivers/huawei_platform/touchscreen/synaptics_dsx_s3207/synaptics_dsx_test_reporting.c:4607:	tp_log_err("DTSI configuration is invalid\n");
+drivers/huawei_platform/touchscreen/cyttsp5_cs445a/cyttsp5_devtree.c:706: * get_of_u32_val() - get the u32 type value fro the DTSI.
+drivers/huawei_platform/touchscreen/cyttsp5_cs445a/cyttsp5_devtree.c:708: * @name: The DTSI key name
+drivers/spi/spi-davinci.c:790: * spi_davinci_get_pdata - Get platform data from DTS binding
+drivers/scsi/ips.c:134:/* 6.11.xx  - Get VersionInfo buffer off the stack !              DDTS 60401 */
+drivers/scsi/ips.c:135:/* 6.11.xx  - Make Logical Drive Info structure safe for DMA      DDTS 60639 */
+drivers/bluetooth/device_feature.c:1:// Sine so many modification made, we just add DTS number in the begging
+drivers/video/msm/mdss/mdss_mdp_intf_video.c:20:/*delete the DTS clerical error*/
+fs/jfs/jfs_dtree.h:56:#define	DTSLOTSIZE	32
+fs/jfs/jfs_dtree.h:57:#define	L2DTSLOTSIZE	5
+fs/jfs/jfs_dtree.h:58:#define DTSLOTHDRSIZE	2
+fs/jfs/jfs_dtree.h:59:#define DTSLOTDATASIZE	30
+fs/jfs/jfs_dtree.h:60:#define DTSLOTDATALEN	15
+fs/jfs/jfs_dtree.h:126:#define DTSaddress(dir_table_slot, address64)\
+fs/jfs/jfs_dtree.h:132:#define addressDTS(dts)\
+fs/jfs/jfs_imap.c:772:			       lv->length << L2DTSLOTSIZE);
+fs/jfs/jfs_dtree.c:372:		DTSaddress(dirtab_slot, bn);
+fs/jfs/jfs_dtree.c:477:	DTSaddress(dirtab_slot, bn);
+fs/jfs/jfs_dtree.c:534:	DTSaddress(dirtab_slot, bn);
+fs/jfs/jfs_dtree.c:905:		n = index >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:908:		    ((p->header.nextindex - 1) >> L2DTSLOTSIZE) - n + 1;
+fs/jfs/jfs_dtree.c:981:		n = sbi->bsize >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:982:		n -= (n + 31) >> L2DTSLOTSIZE;	/* stbl size */
+fs/jfs/jfs_dtree.c:1023:		n = xsize >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:1024:		n -= (n + 31) >> L2DTSLOTSIZE;	/* stbl size */
+fs/jfs/jfs_dtree.c:1278:				n = skip >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:1282:				      1) >> L2DTSLOTSIZE) - n + 1;
+fs/jfs/jfs_dtree.c:1424:	n = PSIZE >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:1426:	stblsize = (n + 31) >> L2DTSLOTSIZE;	/* in unit of slot */
+fs/jfs/jfs_dtree.c:1505:	half = (PSIZE >> L2DTSLOTSIZE) >> 1;	/* swag */
+fs/jfs/jfs_dtree.c:1606:		n = skip >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:1609:		    ((sp->header.nextindex - 1) >> L2DTSLOTSIZE) - n + 1;
+fs/jfs/jfs_dtree.c:1745:	oldstblsize = (sp->header.maxslot + 31) >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:1747:	n = xsize >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:1748:	newstblsize = (n + 31) >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:1952:	n = xsize >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:1954:	stblsize = (n + 31) >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:2190:			i = index >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:2193:			    ((p->header.nextindex - 1) >> L2DTSLOTSIZE) -
+fs/jfs/jfs_dtree.c:2409:			i = index >> L2DTSLOTSIZE;
+fs/jfs/jfs_dtree.c:2412:			    ((p->header.nextindex - 1) >> L2DTSLOTSIZE) -
+fs/jfs/jfs_dtree.c:3087:			bn = addressDTS(&dirtab_slot);
+fs/jfs/jfs_dtree.c:3277:				len = min(d_namleft, DTSLOTDATALEN);
+fs/jfs/jfs_dtree.c:3646:		len = min(namlen, DTSLOTDATALEN);
+fs/jfs/jfs_dtree.c:3749:		len = min(namlen, DTSLOTDATALEN);
+fs/jfs/jfs_dtree.c:3897:		len = min(namlen, DTSLOTDATALEN);
+fs/jfs/jfs_dtree.c:4006:		len = min(klen, DTSLOTDATALEN);
+fs/jfs/jfs_dtree.c:4209:			len = min(snamlen, DTSLOTDATALEN);
+fs/jfs/jfs_txnmgr.c:779:		linelock->l2linesize = L2DTSLOTSIZE;
+fs/jfs/jfs_txnmgr.c:1609:	lrd->log.redopage.l2linesize = cpu_to_le16(L2DTSLOTSIZE);
+include/sound/ak4113.h:39:/* DAT mask & DTS select */
+include/sound/ak4113.h:40:#define AK4113_REG_DATDTS	0x06
+include/sound/ak4113.h:91:#define AK4113_WRITABLE_REGS	(AK4113_REG_DATDTS + 1)
+include/sound/ak4113.h:210:/* AK4113_REG_DATDTS */
+include/sound/ak4113.h:213:/* DTS-CD 16-bit Sync Word Detect */
+include/sound/ak4113.h:214:#define AK4113_DTS16		(1<<3)
+include/sound/ak4113.h:215:/* DTS-CD 14-bit Sync Word Detect */
+include/sound/ak4113.h:216:#define AK4113_DTS14		(1<<2)
+include/sound/ak4113.h:225:/* Non-PCM or DTS stream auto detection, 0 = no detect, 1 = detect */
+include/sound/ak4113.h:250:/* DTS-CD bit audio stream detect, 0 = no detect, 1 = detect */
+include/sound/ak4113.h:251:#define AK4113_DTSCD		(1<<1)
+include/sound/ak4114.h:126:#define AK4117_MDTS             (1<<3)  /* mask enable for DTSCD bit */
+include/sound/ak4114.h:133:#define AK4114_AUTO		(1<<6)	/* Non-PCM or DTS stream auto detection, 0 = no detect, 1 = detect */
+include/sound/ak4114.h:136:#define AK4114_DTSCD		(1<<3)	/* DTS-CD Detect, 0 = No detect, 1 = Detect */
+include/sound/q6core.h:97:#define ADSP_CMD_SET_DTS_EAGLE_DATA_ID 0x00012919
+include/sound/q6core.h:98:#define DTS_EAGLE_LICENSE_ID           0x00028346
+include/sound/asoundef.h:187:#define CEA861_AUDIO_INFOFRAME_DB1CT_DTS	(7<<4) /* DTS */
+include/sound/asoundef.h:191:#define CEA861_AUDIO_INFOFRAME_DB1CT_DTS_HD	(11<<4) /* DTS-HD */
+include/sound/q6adm-v2.h:37:	ADM_DTS_EAGLE,
+include/sound/ak4117.h:122:#define AK4117_AUTO		(1<<5)	/* Non-PCM or DTS stream auto detection, 0 = no detect, 1 = detect */
+include/sound/ak4117.h:130:#define AK4117_DTSCD		(1<<6)	/* DTS-CD bit audio stream detect, 0 = no detect, 1 = detect */
+include/sound/apr_audio.h:1254:#define DTS	0x00010D88
+include/sound/apr_audio.h:1255:#define DTS_LBR	0x00010DBB
+include/sound/apr_audio.h:1327:	* - #ASM_MEDIA_FMT_DTS
+include/sound/apr_audio.h:1379:* ID of the DTS mix LFE channel to front channels parameter in the
+include/sound/apr_audio.h:1382:* ASM_PARAM_ID_DTS_MIX_LFE_TO_FRONT
+include/sound/apr_audio.h:1384:#define ASM_PARAM_ID_DTS_MIX_LFE_TO_FRONT                          0x00010DB6
+include/sound/apr_audio.h:1387:* ID of the DTS DRC ratio parameter in the
+include/sound/apr_audio.h:1390:* ASM_PARAM_ID_DTS_DRC_RATIO
+include/sound/apr_audio.h:1392:#define ASM_PARAM_ID_DTS_DRC_RATIO                                   0x00010DB7
+include/sound/apr_audio.h:1395:* ID of the DTS enable dialog normalization parameter in the
+include/sound/apr_audio.h:1399:* ASM_PARAM_ID_DTS_ENABLE_DIALNORM
+include/sound/apr_audio.h:1401:#define ASM_PARAM_ID_DTS_ENABLE_DIALNORM                             0x00010DB8
+include/sound/apr_audio.h:1404:* ID of the DTS enable parse REV2AUX parameter in the
+include/sound/apr_audio.h:1407:* ASM_PARAM_ID_DTS_ENABLE_PARSE_REV2AUX
+include/sound/apr_audio.h:1409:#define ASM_PARAM_ID_DTS_ENABLE_PARSE_REV2AUX                         0x00010DB9
+include/sound/apr_audio.h:1414:	* #ASM_PARAM_ID_DTS_MIX_LFE_TO_FRONT:
+include/sound/apr_audio.h:1420:	* #ASM_PARAM_ID_DTS_DRC_RATIO:
+include/sound/apr_audio.h:1425:	* #ASM_PARAM_ID_DTS_ENABLE_DIALNORM:
+include/sound/apr_audio.h:1430:	* #ASM_PARAM_ID_DTS_ENABLE_PARSE_REV2AUX:
+include/sound/apr_audio-v2.h:2470:#define ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_0		0x00010347
+include/sound/apr_audio-v2.h:2471:#define ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_1		0x00010348
+include/sound/apr_audio-v2.h:2874:#define ASM_MEDIA_FMT_AAC_FORMAT_FLAG_ADTS 0
+include/sound/apr_audio-v2.h:2899: * - #ASM_MEDIA_FMT_AAC_FORMAT_FLAG_ADTS
+include/sound/apr_audio-v2.h:2941: * element. - For ADTS format, this is indicated by the
+include/sound/apr_audio-v2.h:2942: * samplingFrequencyIndex in the ADTS fixed header. - For ADIF
+include/sound/apr_audio-v2.h:2966: * - #ASM_MEDIA_FMT_AAC_FORMAT_FLAG_ADTS
+include/sound/apr_audio-v2.h:3461:#define ASM_MEDIA_FMT_DTS                    0x00010D88
+include/sound/apr_audio-v2.h:4988: * - #ASM_MEDIA_FMT_DTS
+include/sound/apr_audio-v2.h:7073:/* DTS Eagle */
+include/sound/apr_audio-v2.h:7074:#define AUDPROC_MODULE_ID_DTS_HPX_PREMIX 0x0001077C
+include/sound/apr_audio-v2.h:7075:#define AUDPROC_MODULE_ID_DTS_HPX_POSTMIX 0x0001077B
+include/sound/apr_audio-v2.h:7076:#define ASM_STREAM_POSTPROC_TOPO_ID_DTS_HPX 0x00010DED
+include/net/sctp/command.h:97:	SCTP_CMD_REPORT_FWDTSN,	 /* Report new cumulative TSN Ack. */
+include/net/sctp/command.h:98:	SCTP_CMD_PROCESS_FWDTSN, /* Skips were reported, so process further. */
+include/linux/ieee80211.h:111:#define IEEE80211_CTL_EXT_DMG_DTS	0x6000
+include/linux/ieee80211.h:2071:	IEEE80211_TSPEC_STATUS_ADDTS_INVAL_PARAMS = 0x1,
+include/linux/mmc/sdio.h:161:#define  SDIO_DRIVE_DTSx_MASK	0x03
+include/linux/mmc/sdio.h:162:#define  SDIO_DRIVE_DTSx_SHIFT	4
+include/linux/mmc/sdio.h:163:#define  SDIO_DTSx_SET_TYPE_B	(0 << SDIO_DRIVE_DTSx_SHIFT)
+include/linux/mmc/sdio.h:164:#define  SDIO_DTSx_SET_TYPE_A	(1 << SDIO_DRIVE_DTSx_SHIFT)
+include/linux/mmc/sdio.h:165:#define  SDIO_DTSx_SET_TYPE_C	(2 << SDIO_DRIVE_DTSx_SHIFT)
+include/linux/mmc/sdio.h:166:#define  SDIO_DTSx_SET_TYPE_D	(3 << SDIO_DRIVE_DTSx_SHIFT)
+include/linux/hdmi.h:167:	HDMI_AUDIO_CODING_TYPE_DTS,
+include/linux/hdmi.h:171:	HDMI_AUDIO_CODING_TYPE_DTS_HD,
+include/linux/pti.h:29:#define PTI_LASTDWORD_DTS	0x30
+include/linux/rio_ids.h:41:#define RIO_DID_IDTSPS1616		0x0378
+include/linux/usb/audio-v2.h:258:#define UAC2_ENCODER_DTS		0x05
+include/linux/usb/audio-v2.h:266:#define UAC2_DECODER_DTS		0x05
+include/linux/usb/audio-v2.h:448:/* A17.13.4 DTS Decoder Control Selectors */
+include/linux/usb/audio-v2.h:449:#define UAC2_DTS_UNDEFINED		0x00
+include/linux/usb/audio-v2.h:450:#define UAC2_DTS_UNDERFLOW		0x01
+include/linux/usb/audio-v2.h:451:#define UAC2_DTS_OVERFLOW		0x02
+include/linux/usb/audio-v2.h:452:#define UAC2_DTS_DECODER_ERROR		0x03
+include/uapi/sound/audio_effects.h:136:#define DTS_EAGLE_MODULE		0x00005000
+include/uapi/sound/audio_effects.h:138:#define DTS_EAGLE_IOCTL_GET_CACHE_SIZE _IOR(EAGLE_DRIVER_ID, 0, int)
+include/uapi/sound/audio_effects.h:139:#define DTS_EAGLE_IOCTL_SET_CACHE_SIZE _IOW(EAGLE_DRIVER_ID, 1, int)
+include/uapi/sound/audio_effects.h:140:#define DTS_EAGLE_IOCTL_GET_PARAM _IOR(EAGLE_DRIVER_ID, 2, void*)
+include/uapi/sound/audio_effects.h:141:#define DTS_EAGLE_IOCTL_SET_PARAM _IOW(EAGLE_DRIVER_ID, 3, void*)
+include/uapi/sound/audio_effects.h:142:#define DTS_EAGLE_IOCTL_SET_CACHE_BLOCK _IOW(EAGLE_DRIVER_ID, 4, void*)
+include/uapi/sound/audio_effects.h:143:#define DTS_EAGLE_IOCTL_SET_ACTIVE_DEVICE _IOW(EAGLE_DRIVER_ID, 5, void*)
+include/uapi/sound/audio_effects.h:144:#define DTS_EAGLE_IOCTL_GET_LICENSE _IOR(EAGLE_DRIVER_ID, 6, void*)
+include/uapi/sound/audio_effects.h:145:#define DTS_EAGLE_IOCTL_SET_LICENSE _IOW(EAGLE_DRIVER_ID, 7, void*)
+include/uapi/sound/audio_effects.h:146:#define DTS_EAGLE_IOCTL_SEND_LICENSE _IOW(EAGLE_DRIVER_ID, 8, int)
+include/uapi/sound/audio_effects.h:147:#define DTS_EAGLE_IOCTL_SET_VOLUME_COMMANDS _IOW(EAGLE_DRIVER_ID, 9, void*)
+include/uapi/sound/compress_params.h:67:#define Q6_DTS		0x00010D88
+include/uapi/sound/compress_params.h:68:#define Q6_DTS_LBR	0x00010DBB
+include/uapi/sound/compress_params.h:84:#define SND_AUDIOCODEC_DTS_PASS_THROUGH      ((__u32) 0x0000000E)
+include/uapi/sound/compress_params.h:85:#define SND_AUDIOCODEC_DTS_LBR               ((__u32) 0x0000000F)
+include/uapi/sound/compress_params.h:86:#define SND_AUDIOCODEC_DTS_TRANSCODE_LOOPBACK ((__u32) 0x00000010)
+include/uapi/sound/compress_params.h:89:#define SND_AUDIOCODEC_DTS_LBR_PASS_THROUGH  ((__u32) 0x00000013)
+include/uapi/sound/compress_params.h:93:#define SND_AUDIOCODEC_DTS             	     ((__u32) 0x00000017)
+include/uapi/sound/compress_params.h:149:#define SND_AUDIOSTREAMFORMAT_MP2ADTS        ((__u32) 0x00000001)
+include/uapi/sound/compress_params.h:150:#define SND_AUDIOSTREAMFORMAT_MP4ADTS        ((__u32) 0x00000002)
+include/uapi/sound/compress_params.h:225:#define SND_AUDIOMODE_IEC_DTS		     ((__u32) 0x00000040)
+include/uapi/sound/compress_params.h:229:#define SND_AUDIOMODE_IEC_DTS_HD	     ((__u32) 0x00000400)
+include/uapi/sound/compress_params.h:378: * for AAC-RAW and AAC-ADTS.
+include/uapi/linux/msm_audio_calibration.h:87:	DTS_EAGLE_CAL_TYPE,
+include/uapi/linux/msm_audio_aac.h:20:#define AUDIO_AAC_FORMAT_ADTS		-1
+include/uapi/linux/dvb/dmx.h:376:	/* Indication whether DTS value is valid */
+include/uapi/linux/dvb/dmx.h:379:	/* DTS value associated with the buffer */
+include/uapi/linux/dvb/audio.h:81:/*   15-13 audio coding mode (0=ac3, 2=mpeg1, 3=mpeg2ext, 4=LPCM, 6=DTS, */
+include/uapi/linux/dvb/audio.h:91:#define AUDIO_CAP_DTS    1
+net/sctp/sm_statefuns.c:3878:	sctp_add_cmd_sf(commands, SCTP_CMD_REPORT_FWDTSN, SCTP_U32(tsn));
+net/sctp/sm_statefuns.c:3880:		sctp_add_cmd_sf(commands, SCTP_CMD_PROCESS_FWDTSN,
+net/sctp/sm_statefuns.c:3946:	sctp_add_cmd_sf(commands, SCTP_CMD_REPORT_FWDTSN, SCTP_U32(tsn));
+net/sctp/sm_statefuns.c:3948:		sctp_add_cmd_sf(commands, SCTP_CMD_PROCESS_FWDTSN,
+net/sctp/sm_sideeffect.c:938:/* Process variable FWDTSN chunk information. */
+net/sctp/sm_sideeffect.c:1312:		case SCTP_CMD_REPORT_FWDTSN:
+net/sctp/sm_sideeffect.c:1323:		case SCTP_CMD_PROCESS_FWDTSN:
+scripts/Makefile.lib:155:		 -undef -D__DTS__
+sound/pci/hda/hda_eld.c:73:	AUDIO_CODING_TYPE_DTS			=  7,
+sound/pci/hda/hda_eld.c:77:	AUDIO_CODING_TYPE_DTS_HD		= 11,
+sound/pci/hda/hda_eld.c:104:	/*  7 */ "DTS",
+sound/pci/hda/hda_eld.c:108:	/* 11 */ "DTS-HD",
+sound/pci/hda/hda_eld.c:206:	case AUDIO_CODING_TYPE_DTS:
+sound/pci/hda/hda_eld.c:218:	case AUDIO_CODING_TYPE_DTS_HD:
+sound/pci/ice1712/quartet.c:1022:		/* AK4113_REG_DATDTS */		0,
+sound/pci/ca0106/ca0106_main.c:10: *    SPDIF digital playback of PCM stereo and AC3/DTS works.
+sound/pci/ca0106/ca0106.h:229:/* The Front SPDIF PCM gets mixed with samples from the AC97 codec, so can only work for Stereo PCM and not AC3/DTS
+sound/pci/ca0106/ca0106.h:230: * The Rear SPDIF can be used for Stereo PCM and also AC3/DTS
+sound/pci/ca0106/ca0106.h:231: * The Center/LFE SPDIF cannot be used for AC3/DTS, but can be used for Stereo PCM.
+sound/pci/ca0106/ca0106.h:232: * Summary: For ALSA we use the Rear channel for SPDIF Digital AC3/DTS output
+sound/pci/ca0106/ca0106.h:235: * A standard 3 pole stereo mini-jack to 2 RCA plugs can be used for SPDIF AC3/DTS and Stereo PCM output utilising the Rear channel and just one of the RCA plugs. 
+sound/pci/Kconfig:238:	   * Club3D Theatron DTS
+sound/soc/mid-x86/sst_dsp.h:64:#define AAC_BIT_STREAM_ADTS		0
+sound/soc/mid-x86/sst_platform.c:568:		if (params->codec.format == SND_AUDIOSTREAMFORMAT_MP4ADTS)
+sound/soc/mid-x86/sst_platform.c:570:							AAC_BIT_STREAM_ADTS;
+sound/soc/fsl/mpc5200_psc_i2s.c:181:	psc_dma->sicr = MPC52xx_PSC_SICR_DTS1 | MPC52xx_PSC_SICR_I2S |
+sound/soc/sh/ssi.c:23: *	signal.  Can be used to send compressed data (AC3/DTS) to a DSP.
+sound/soc/msm/apq8084-i2s.c:94: * in board/target specific DTSI file.
+sound/soc/msm/msmzirc.c:67: * in board/target specific DTSI file.
+sound/soc/msm/qdsp6v2/msm-compr-q6-v2.c:1395:		case SND_AUDIOCODEC_DTS:
+sound/soc/msm/qdsp6v2/msm-compr-q6-v2.c:1396:		case SND_AUDIOCODEC_DTS_PASS_THROUGH:
+sound/soc/msm/qdsp6v2/msm-compr-q6-v2.c:1397:		case SND_AUDIOCODEC_DTS_LBR:
+sound/soc/msm/qdsp6v2/msm-compr-q6-v2.c:1398:		case SND_AUDIOCODEC_DTS_LBR_PASS_THROUGH:
+sound/soc/msm/qdsp6v2/msm-compr-q6-v2.c:1399:		case SND_AUDIOCODEC_DTS_TRANSCODE_LOOPBACK:
+sound/soc/msm/qdsp6v2/q6adm.c:238:	pr_debug("DTS_EAGLE_ADM - %s: port id %i, copp idx %i, param id 0x%X\n",
+sound/soc/msm/qdsp6v2/q6adm.c:243:	pr_debug("DTS_EAGLE_ADM - %s: after lookup, port id %i, port idx %i\n",
+sound/soc/msm/qdsp6v2/q6adm.c:247:		pr_err("DTS_EAGLE_ADM - %s: invalid port index %i, port id %i, copp idx %i\n",
+sound/soc/msm/qdsp6v2/q6adm.c:254:		pr_err("DTS_EAGLE_ADM - %s: NULL memmap. Non Eagle topology selected?\n",
+sound/soc/msm/qdsp6v2/q6adm.c:259:	*update_params_value++ = AUDPROC_MODULE_ID_DTS_HPX_POSTMIX;
+sound/soc/msm/qdsp6v2/q6adm.c:281:	pr_debug("DTS_EAGLE_ADM - %s: Command was sent now check Q6 - port id = %d, size %d, module id %x, param id %x.\n",
+sound/soc/msm/qdsp6v2/q6adm.c:283:			admp.payload_size, AUDPROC_MODULE_ID_DTS_HPX_POSTMIX,
+sound/soc/msm/qdsp6v2/q6adm.c:288:		pr_err("DTS_EAGLE_ADM - %s: ADM enable for port %d failed\n",
+sound/soc/msm/qdsp6v2/q6adm.c:296:		pr_err("DTS_EAGLE_ADM - %s: set params timed out port = %d\n",
+sound/soc/msm/qdsp6v2/q6adm.c:311:	pr_debug("DTS_EAGLE_ADM - %s: port id %i, copp idx %i, param id 0x%X\n",
+sound/soc/msm/qdsp6v2/q6adm.c:317:		pr_err("DTS_EAGLE_ADM - %s: invalid port index %i, port id %i, copp idx %i\n",
+sound/soc/msm/qdsp6v2/q6adm.c:323:		pr_err("DTS_EAGLE_ADM - %s: invalid size %i or pointer %p.\n",
+sound/soc/msm/qdsp6v2/q6adm.c:333:		pr_err("DTS_EAGLE_ADM - %s, adm params memory alloc failed",
+sound/soc/msm/qdsp6v2/q6adm.c:352:	admp->module_id = AUDPROC_MODULE_ID_DTS_HPX_POSTMIX;
+sound/soc/msm/qdsp6v2/q6adm.c:359:		pr_err("DTS_EAGLE_ADM - %s: Failed to get EAGLE Params on port %d\n",
+sound/soc/msm/qdsp6v2/q6adm.c:367:		pr_err("DTS_EAGLE_ADM - %s: EAGLE get params timed out port = %d\n",
+sound/soc/msm/qdsp6v2/q6adm.c:379:		pr_err("DTS_EAGLE_ADM - %s: EAGLE get params problem getting data, size was %zu, expected was %i - check callback error value",
+sound/soc/msm/qdsp6v2/q6adm.c:1874:	if ((topology == ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_0 ||
+sound/soc/msm/qdsp6v2/q6adm.c:1875:	     topology == ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_1) &&
+sound/soc/msm/qdsp6v2/q6adm.c:1878:		atomic_set(&this_adm.mem_map_cal_index, ADM_DTS_EAGLE);
+sound/soc/msm/qdsp6v2/q6adm.c:1883:			pr_err("%s: DTS_EAGLE mmap did not work!", __func__);
+sound/soc/msm/qdsp6v2/q6adm.c:2119:				ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_0) ||
+sound/soc/msm/qdsp6v2/q6adm.c:2122:				ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_1))
+sound/soc/msm/qdsp6v2/q6adm.c:2203:			atomic_set(&this_adm.mem_map_cal_index, ADM_DTS_EAGLE);
+sound/soc/msm/qdsp6v2/q6adm.c:2210:					   [ADM_DTS_EAGLE], 0);
+sound/soc/msm/qdsp6v2/q6adm.c:2558:		{{DTS_EAGLE_CAL_TYPE,
+sound/soc/msm/qdsp6v2/msm-dts-eagle.h:13:#ifndef __MSM_DTS_EAGLE_H__
+sound/soc/msm/qdsp6v2/msm-dts-eagle.h:14:#define __MSM_DTS_EAGLE_H__
+sound/soc/msm/qdsp6v2/msm-dts-eagle.h:27:#ifdef CONFIG_DTS_EAGLE
+sound/soc/msm/qdsp6v2/audio_cal_utils.c:123:	case DTS_EAGLE_CAL_TYPE:
+sound/soc/msm/qdsp6v2/audio_cal_utils.c:235:	case DTS_EAGLE_CAL_TYPE:
+sound/soc/msm/qdsp6v2/msm-dts-srs-tm-config.h:12:#ifndef _MSM_DTS_SRS_TM_CONFIG_H_
+sound/soc/msm/qdsp6v2/msm-dts-srs-tm-config.h:13:#define _MSM_DTS_SRS_TM_CONFIG_H_
+sound/soc/msm/qdsp6v2/msm-dts-srs-tm-config.h:17:#ifdef CONFIG_DTS_SRS_TM
+sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c:211:				pr_err("%s: Send Volume command failed (DTS_EAGLE) rc=%d\n",
+sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c:589:					SND_AUDIOSTREAMFORMAT_MP4ADTS)
+sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c:712:	case ASM_STREAM_POSTPROC_TOPO_ID_DTS_HPX:
+sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c:1898:			(SND_AUDIOSTREAMFORMAT_MP4ADTS |
+sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c:2073:	case DTS_EAGLE_MODULE:
+sound/soc/msm/qdsp6v2/msm-compress-q6-v2.c:2074:		pr_debug("%s: DTS_EAGLE_MODULE\n", __func__);
+sound/soc/msm/qdsp6v2/msm-audio-effects-q6-v2.c:35:	case DTS_EAGLE_MODULE:
+sound/soc/msm/qdsp6v2/msm-audio-effects-q6-v2.c:37:		case ASM_STREAM_POSTPROC_TOPO_ID_DTS_HPX:
+sound/soc/msm/qdsp6v2/q6asm.c:1629:			pr_debug("DTS_EAGLE_ASM callback size in ints = %i\n",
+sound/soc/msm/qdsp6v2/q6asm.c:2216:	/* For DTS EAGLE only, force 24 bit */
+sound/soc/msm/qdsp6v2/q6asm.c:2217:	if (open.postprocopo_id == ASM_STREAM_POSTPROC_TOPO_ID_DTS_HPX)
+sound/soc/msm/qdsp6v2/q6asm.c:4218:		pr_err("DTS_EAGLE_ASM - %s: error allocating mem of size %i\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4224:		pr_err("DTS_EAGLE_ASM - %s: APR handle NULL, invalid size %i or pointer %p.\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4237:	ad->data.module_id = AUDPROC_MODULE_ID_DTS_HPX_PREMIX;
+sound/soc/msm/qdsp6v2/q6asm.c:4247:		pr_err("DTS_EAGLE_ASM - %s: set-params send failed paramid[0x%x]\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4256:		pr_err("DTS_EAGLE_ASM - %s: timeout, set-params paramid[0x%x]\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4274:		pr_err("DTS_EAGLE_ASM - %s: APR handle NULL, invalid size %i or pointer %p.\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4281:		pr_err("DTS_EAGLE_ASM - %s: error allocating memory of size %i\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4290:	ad->param.module_id = AUDPROC_MODULE_ID_DTS_HPX_PREMIX;
+sound/soc/msm/qdsp6v2/q6asm.c:4299:		pr_err("DTS_EAGLE_ASM - %s: error allocating mem of size %i\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4306:		pr_err("DTS_EAGLE_ASM - %s: Commmand 0x%x failed\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4313:		pr_err("DTS_EAGLE_ASM - %s: timeout in getting session time from DSP\n",
+sound/soc/msm/qdsp6v2/q6asm.c:4324:		pr_err("DTS_EAGLE_ASM - %s: EAGLE get params problem getting data - check callback error value\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:309:	pr_err("DTS_EAGLE_DRIVER: %s - device %i not found, returning 0\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:324:	msm_audio_ion_alloc("DTS_EAGLE", &ion_client, &ion_handle, ION_MEM_SIZE,
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:345:	pr_info("DTS_EAGLE_DRIVER_PRE: %s called (set pre-param)\n", __func__);
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:354:		pr_debug("DTS_EAGLE_DRIVER_PRE: get requested\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:357:			pr_debug("DTS_EAGLE_DRIVER_PRE: get from dsp requested\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:359:				pr_err("DTS_EAGLE_DRIVER_PRE: param size for inband get too big (size is %d, max inband size is %d)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:365:				pr_err("DTS_EAGLE_DRIVER_PRE: out of memory\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:369:				pr_info("DTS_EAGLE_DRIVER_PRE: asm failed, trying core\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:372:					pr_err("DTS_EAGLE_DRIVER_PRE: get from qdsp failed (topology not eagle or closed)\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:374:					goto DTS_EAGLE_IOCTL_GET_PARAM_PRE_EXIT;
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:381:				pr_err("DTS_EAGLE_DRIVER_PRE: invalid size %d and/or offset %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:387:DTS_EAGLE_IOCTL_GET_PARAM_PRE_EXIT:
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:394:			pr_err("DTS_EAGLE_DRIVER_PRE: invalid size %i and/or offset %i for parameter (cache is size %u)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:401:		pr_debug("DTS_EAGLE_DRIVER_PRE: param info: param = 0x%X, size = %i, offset = %i, device = %i, cache block %i, global offset = %i, first bytes as integer = %i.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:406:			pr_err("DTS_EAGLE_DRIVER_PRE: q6asm_dts_eagle_set failed with id = 0x%X, size = %d, offset = %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:409:			pr_debug("DTS_EAGLE_DRIVER_PRE: q6asm_dts_eagle_set succeeded with id = 0x%X, size = %d, offset = %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:422:	pr_debug("DTS_EAGLE_DRIVER_VOLUME: entry: vol_cmd_cnt = %i, lgain = %i, rgain = %i",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:426:		pr_err("DTS_EAGLE_DRIVER_VOLUME: driver cache not initialized.\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:440:			pr_debug("DTS_EAGLE_DRIVER_VOLUME: loop %i cmd desc found %i, idx = %i. volume info: lgain = %i, rgain = %i, volume = %i (scale %i, min %i, max %i)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:448:			pr_err("DTS_EAGLE_DRIVER_VOLUME: volume size (%i) + offset (%i) out of bounds %i.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:455:			pr_err("DTS_EAGLE_DRIVER_VOLUME: loop %i - volume set failed with id 0x%X, size %i, offset %i, cmd_desc %i, scale %i, min %i, max %i, data(...) %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:461:			pr_debug("DTS_EAGLE_DRIVER_VOLUME: loop %i - volume set succeeded with id 0x%X, size %i, offset %i, cmd_desc %i, scale %i, min %i, max %i, data(...) %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:475:	case DTS_EAGLE_IOCTL_GET_CACHE_SIZE: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:476:		pr_info("DTS_EAGLE_DRIVER_POST: %s called with control 0x%X (get param cache size)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:480:			pr_err("DTS_EAGLE_DRIVER_POST: error writing size\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:485:	case DTS_EAGLE_IOCTL_SET_CACHE_SIZE: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:487:		pr_info("DTS_EAGLE_DRIVER_POST: %s called with control 0x%X (allocate param cache)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:490:			pr_err("DTS_EAGLE_DRIVER_POST: error copying size (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:494:			pr_err("DTS_EAGLE_DRIVER_POST: cache size %d not allowed (min 0, max %d)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:499:			pr_info("DTS_EAGLE_DRIVER_POST: previous param cache of size %u freed\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:508:			pr_info("DTS_EAGLE_DRIVER_POST: %d bytes requested for param cache, nothing allocated\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:512:			pr_info("DTS_EAGLE_DRIVER_POST: %d bytes allocated for param cache\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:516:			pr_err("DTS_EAGLE_DRIVER_POST: error allocating param cache (kzalloc failed on %d bytes)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:523:	case DTS_EAGLE_IOCTL_GET_PARAM: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:527:		pr_info("DTS_EAGLE_DRIVER_POST: %s called, control 0x%X (get param)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:530:			pr_err("DTS_EAGLE_DRIVER_POST: error copying dts_eagle_param_desc (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:537:			pr_info("DTS_EAGLE_DRIVER_POST: get from qdsp requested (port id 0x%X)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:540:				pr_err("DTS_EAGLE_DRIVER_POST: param size for inband get too big (size is %d, max inband size is %d)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:546:				pr_err("DTS_EAGLE_DRIVER_POST: out of memory\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:550:				pr_info("DTS_EAGLE_DRIVER_POST: get from qdsp via adm with port id 0x%X failed, trying core\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:554:					pr_err("DTS_EAGLE_DRIVER_POST: get from qdsp failed\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:556:					goto DTS_EAGLE_IOCTL_GET_PARAM_EXIT;
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:563:				pr_err("DTS_EAGLE_DRIVER_POST: invalid size %d and/or offset %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:571:			pr_err("DTS_EAGLE_DRIVER_POST: error getting param\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:573:			goto DTS_EAGLE_IOCTL_GET_PARAM_EXIT;
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:575:DTS_EAGLE_IOCTL_GET_PARAM_EXIT:
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:579:	case DTS_EAGLE_IOCTL_SET_PARAM: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:583:		pr_info("DTS_EAGLE_DRIVER_POST: %s called, control 0x%X (set param)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:586:			pr_err("DTS_EAGLE_DRIVER_POST: error copying dts_eagle_param_desc (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:591:			pr_info("DTS_EAGLE_DRIVER_POST: 'just set cache' requested.\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:598:			pr_err("DTS_EAGLE_DRIVER_POST: invalid size %i and/or offset %i for parameter (target cache block %i with offset %i, global cache is size %u)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:606:			pr_err("DTS_EAGLE_DRIVER_POST: error copying param to cache (src:%p, tgt:%p, size:%i)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:611:		pr_debug("DTS_EAGLE_DRIVER_POST: param info: param = 0x%X, size = %i, offset = %i, device = %i, cache block %i, global offset = %i, first bytes as integer = %i.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:617:			pr_debug("DTS_EAGLE_DRIVER_POST: checking for active Eagle for device %i (port id 0x%X)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:622:					pr_err("DTS_EAGLE_DRIVER_POST: adm_dts_eagle_set failed with id = 0x%X, size = %i, offset = %i, device = %i, global offset = %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:626:					pr_debug("DTS_EAGLE_DRIVER_POST: adm_dts_eagle_set succeeded with id = 0x%X, size = %i, offset = %i, device = %i, global offset = %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:631:				pr_debug("DTS_EAGLE_DRIVER_POST: port id 0x%X not active or not Eagle\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:637:	case DTS_EAGLE_IOCTL_SET_CACHE_BLOCK: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:639:		pr_info("DTS_EAGLE_DRIVER_POST: %s called with control 0x%X (set param cache block)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:642:			pr_err("DTS_EAGLE_DRIVER_POST: error copying cache block data (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:648:			pr_err("DTS_EAGLE_DRIVER_POST: cache block %u out of range (max %u)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:655:			pr_err("DTS_EAGLE_DRIVER_POST: cache block bounds out of range\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:659:		pr_debug("DTS_EAGLE_DRIVER_POST: cache block %i set: devices 0x%X, global offset %u, offsets 1:%u 2:%u 3:%u, cmds/sizes 0:0x%X %u 1:0x%X %u 2:0x%X %u 3:0x%X %u\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:667:	case DTS_EAGLE_IOCTL_SET_ACTIVE_DEVICE: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:669:		pr_info("DTS_EAGLE_DRIVER_POST: %s called with control 0x%X (set active device)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:672:			pr_err("DTS_EAGLE_DRIVER_POST: error copying active device data (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:678:			pr_debug("DTS_EAGLE_DRIVER_POST: primary device %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:682:			pr_debug("DTS_EAGLE_DRIVER_POST: all devices 0x%X\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:687:	case DTS_EAGLE_IOCTL_GET_LICENSE: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:690:		pr_info("DTS_EAGLE_DRIVER_POST: %s called with control 0x%X (get license)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:694:			pr_err("DTS_EAGLE_DRIVER_POST: error reading license index. (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:701:			pr_err("DTS_EAGLE_DRIVER_POST: license index %i out of bounds (max index is %i)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:706:			pr_err("DTS_EAGLE_DRIVER_POST: license index %i never initialized.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:712:			pr_err("DTS_EAGLE_DRIVER_POST: license size %i for index %i invalid (min size is 1, max size is %i).\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:717:			pr_info("DTS_EAGLE_DRIVER_POST: reporting size of license data only\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:720:				pr_err("DTS_EAGLE_DRIVER_POST: error copying license size.\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:725:			pr_err("DTS_EAGLE_DRIVER_POST: error copying license data.\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:728:			pr_debug("DTS_EAGLE_DRIVER_POST: license file %i bytes long from license index %i returned to user.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:733:	case DTS_EAGLE_IOCTL_SET_LICENSE: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:735:		pr_info("DTS_EAGLE_DRIVER_POST: %s called with control 0x%X (set license)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:739:			pr_err("DTS_EAGLE_DRIVER_POST: error reading license index (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:744:			pr_err("DTS_EAGLE_DRIVER_POST: license index %i out of bounds (max index is %i)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:749:			pr_info("DTS_EAGLE_DRIVER_POST: request to free license index %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:756:			pr_err("DTS_EAGLE_DRIVER_POST: license size %i for index %i invalid (min size is 1, max size is %i).\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:762:				pr_info("DTS_EAGLE_DRIVER_POST: request new size for already allocated license index %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:768:		pr_debug("DTS_EAGLE_DRIVER_POST: allocating %i bytes for license index %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:772:			pr_err("DTS_EAGLE_DRIVER_POST: error allocating license index %i (kzalloc failed on %i bytes)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:780:			pr_err("DTS_EAGLE_DRIVER_POST: error copying license to index %i, size %i (src:%p, tgt:%p, size:%i)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:787:			pr_debug("DTS_EAGLE_DRIVER_POST: license file %i bytes long copied to index license index %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:792:	case DTS_EAGLE_IOCTL_SEND_LICENSE: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:794:		pr_info("DTS_EAGLE_DRIVER_POST: %s called with control 0x%X (send license)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:798:			pr_err("DTS_EAGLE_DRIVER_POST: error reading license index (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:803:			pr_err("DTS_EAGLE_DRIVER_POST: license index %i out of bounds (max index is %i)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:808:			pr_err("DTS_EAGLE_DRIVER_POST: license index %i is invalid\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:814:			pr_err("DTS_EAGLE_DRIVER_POST: core_dts_eagle_set failed with id = %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:817:			pr_debug("DTS_EAGLE_DRIVER_POST: core_dts_eagle_set succeeded with id = %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:822:	case DTS_EAGLE_IOCTL_SET_VOLUME_COMMANDS: {
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:824:		pr_info("DTS_EAGLE_DRIVER_POST: %s called with control 0x%X (set volume commands)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:828:			pr_err("DTS_EAGLE_DRIVER_POST: error reading volume command specifier (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:835:			pr_debug("DTS_EAGLE_DRIVER_POST: setting volume command %i size: %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:838:				pr_err("DTS_EAGLE_DRIVER_POST: volume command index %i out of bounds (only %i allocated).\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:843:				pr_err("DTS_EAGLE_DRIVER_POST: error allocating memory for volume controls.\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:849:				pr_err("DTS_EAGLE_DRIVER_POST: error reading volume command descriptor (src:%p, tgt:%p, size:%zu)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:855:			pr_debug("DTS_EAGLE_DRIVER_POST: setting volume command %i spec (size %zu): %i %i %i %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:862:				pr_err("DTS_EAGLE_DRIVER_POST: error reading volume command string (src:%p, tgt:%p, size:%i)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:869:			pr_debug("DTS_EAGLE_DRIVER_POST: setting volume command size\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:871:				pr_err("DTS_EAGLE_DRIVER_POST: volume command count %i out of bounds (min 0, max %i).\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:875:				pr_info("DTS_EAGLE_DRIVER_POST: request to free volume commands.\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:879:			pr_debug("DTS_EAGLE_DRIVER_POST: setting volume command size requested = %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:882:				pr_err("DTS_EAGLE_DRIVER_POST: error allocating memory for volume controls.\n");
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:889:		pr_info("DTS_EAGLE_DRIVER_POST: %s called, control 0x%X (invalid control)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:902:		pr_err("DTS_EAGLE_DRIVER_SENDCACHE_PRE: in %s, no cache for primary device %i found.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:912:		pr_err("DTS_EAGLE_DRIVER_SENDCACHE_PRE: in %s, primary device %i cache index %i general error - cache size = %u, cache ptr = %p, offset = %i, size = %i, cmd = %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:918:	pr_debug("DTS_EAGLE_DRIVER_SENDCACHE_PRE: first 6 integers %i %i %i %i %i %i (30th %i)\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:923:	pr_debug("DTS_EAGLE_DRIVER_SENDCACHE_PRE: sending full data block to port, with cache index = %d device mask 0x%X, param = 0x%X, offset = %d, and size = %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:927:		pr_err("DTS_EAGLE_DRIVER_SENDCACHE_PRE: in %s, q6asm_dts_eagle_set failed with id = %d and size = %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:930:		pr_debug("DTS_EAGLE_DRIVER_SENDCACHE_PRE: in %s, q6asm_dts_eagle_set succeeded with id = %d and size = %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:949:		pr_err("DTS_EAGLE_DRIVER_SENDCACHE_POST :%s: Invalid port idx %d port_id %#x\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:952:		pr_debug("DTS_EAGLE_DRIVER_SENDCACHE_POST : %s valid port idx %d for port_id %#x set to %i",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:965:			pr_err("DTS_EAGLE_DRIVER_SENDCACHE_POST: in %s, no cache for primary device %i found. Port id was 0x%X.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:972:			pr_err("DTS_EAGLE_DRIVER_SENDCACHE_POST: in %s, no cache for combo device %i found. Port id was 0x%X.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:977:		pr_err("DTS_EAGLE_DRIVER_SENDCACHE_POST: in %s, port id 0x%X not for primary or combo device %i.\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:987:		pr_err("DTS_EAGLE_DRIVER_SENDCACHE_POST: in %s, primary device %i cache index %i port_id 0x%X general error - cache size = %u, cache ptr = %p, offset = %i, size = %i, cmd = %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:993:	pr_debug("DTS_EAGLE_DRIVER_SENDCACHE_POST: first 6 integers %i %i %i %i %i %i\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:997:	pr_debug("DTS_EAGLE_DRIVER_SENDCACHE_POST: sending full data block to port, with cache index = %d device mask 0x%X, port_id = 0x%X, param = 0x%X, offset = %d, and size = %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:1002:		pr_err("DTS_EAGLE_DRIVER_SENDCACHE_POST: in %s, adm_dts_eagle_set failed with id = 0x%X and size = %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:1005:		pr_debug("DTS_EAGLE_DRIVER_SENDCACHE_POST: in %s, adm_dts_eagle_set succeeded with id = 0x%X and size = %d\n",
+sound/soc/msm/qdsp6v2/msm-dts-eagle.c:1035:MODULE_DESCRIPTION("DTS EAGLE platform driver");
+sound/soc/msm/qdsp6v2/msm-pcm-routing-v2.c:141:	case ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_0:
+sound/soc/msm/qdsp6v2/msm-pcm-routing-v2.c:142:	case ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_1:
+sound/soc/msm/qdsp6v2/msm-pcm-routing-v2.c:143:		pr_debug("%s: DTS_EAGLE_COPP_TOPOLOGY_ID\n", __func__);
+sound/soc/msm/qdsp6v2/msm-pcm-routing-v2.c:173:	case ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_0:
+sound/soc/msm/qdsp6v2/msm-pcm-routing-v2.c:174:	case ADM_CMD_COPP_OPEN_TOPOLOGY_ID_DTS_HPX_1:
+sound/soc/msm/qdsp6v2/msm-pcm-routing-v2.c:175:		pr_debug("%s: DTS_EAGLE_COPP_TOPOLOGY_ID\n", __func__);
+sound/soc/msm/qdsp6v2/q6core.c:165:			pr_debug("DTS_EAGLE_CORE callback size = %i\n",
+sound/soc/msm/qdsp6v2/q6core.c:342:	pr_debug("DTS_EAGLE_CORE - %s\n", __func__);
+sound/soc/msm/qdsp6v2/q6core.c:344:		pr_err("DTS_EAGLE_CORE - %s: invalid size %i or pointer %p.\n",
+sound/soc/msm/qdsp6v2/q6core.c:355:			pr_err("DTS_EAGLE_CORE - %s: out of memory (aligned size %i).\n",
+sound/soc/msm/qdsp6v2/q6core.c:367:		payload->hdr.opcode = ADSP_CMD_SET_DTS_EAGLE_DATA_ID;
+sound/soc/msm/qdsp6v2/q6core.c:368:		payload->id = DTS_EAGLE_LICENSE_ID;
+sound/soc/msm/qdsp6v2/q6core.c:375:			pr_err("DTS_EAGLE_CORE - %s: failed op[0x%x]rc[%d]\n",
+sound/soc/msm/qdsp6v2/q6core.c:388:	pr_debug("DTS_EAGLE_CORE - %s\n", __func__);
+sound/soc/msm/qdsp6v2/q6core.c:390:		pr_err("DTS_EAGLE_CORE - %s: invalid size %i or pointer %p.\n",
+sound/soc/msm/qdsp6v2/q6core.c:408:			pr_err("DTS_EAGLE_CORE - %s: error allocating memory of size %i\n",
+sound/soc/msm/qdsp6v2/q6core.c:416:			pr_err("DTS_EAGLE_CORE - %s: failed op[0x%x]rc[%d]\n",
+sound/soc/msm/qdsp6v2/q6core.c:425:			pr_err("DTS_EAGLE_CORE - %s: EAGLE get params timed out\n",
+sound/soc/msm/qdsp6v2/q6core.c:435:			pr_err("DTS_EAGLE_CORE - %s: EAGLE get params problem getting data - check callback error value\n",
+sound/soc/msm/qdsp6v2/Makefile:12:obj-$(CONFIG_DTS_EAGLE) += msm-dts-eagle.o
+sound/soc/msm/qdsp6v2/Makefile:15:obj-$(CONFIG_DTS_SRS_TM) += msm-dts-srs-tm-config.o
+sound/soc/msm/apq8084.c:174: * in board/target specific DTSI file.
+sound/soc/msm/Kconfig:96:config DTS_EAGLE
+sound/soc/msm/Kconfig:97:	bool "Enable DTS Eagle Support"
+sound/soc/msm/Kconfig:100:	 To add DTS Eagle support on QDSP6 targets.
+sound/soc/msm/Kconfig:101:	 Eagle is a DTS pre/post processing
+sound/soc/msm/Kconfig:115:config DTS_SRS_TM
+sound/soc/msm/Kconfig:116:	bool "Enable DTS SRS"
+sound/soc/msm/Kconfig:119:	 To add support for DTS SRS post processing.
+sound/soc/msm/Kconfig:154:	select DTS_SRS_TM
+sound/soc/msm/Kconfig:173:	select DTS_SRS_TM
+sound/soc/msm/Kconfig:191:	select DTS_SRS_TM
+sound/soc/msm/Kconfig:237:	select DTS_SRS_TM
+sound/soc/msm/Kconfig:260:	select DTS_SRS_TM
+sound/soc/msm/Kconfig:285:	select DTS_SRS_TM
+sound/soc/msm/Kconfig:320:	select DTS_SRS_TM
+sound/sparc/dbri.c:107:	"WAIT", "PAUSE", "JUMP", "IIQ", "REX", "SDP", "CDP", "DTS",
+sound/sparc/dbri.c:369:#define D_DTS		0x7	/* Define Time Slot */
+sound/sparc/dbri.c:406:#define D_DTS_VI	(1<<17)	/* Valid Input Time-Slot Descriptor */
+sound/sparc/dbri.c:407:#define D_DTS_VO	(1<<16)	/* Valid Output Time-Slot Descriptor */
+sound/sparc/dbri.c:408:#define D_DTS_INS	(1<<15)	/* Insert Time Slot */
+sound/sparc/dbri.c:409:#define D_DTS_DEL	(0<<15)	/* Delete Time Slot */
+sound/sparc/dbri.c:410:#define D_DTS_PRVIN(v) ((v)<<10)	/* Previous In Pipe */
+sound/sparc/dbri.c:411:#define D_DTS_PRVOUT(v)        ((v)<<5)	/* Previous Out Pipe */
+sound/sparc/dbri.c:922:		val = D_DTS_VO | D_DTS_INS | D_DTS_PRVOUT(prevpipe) | pipe;
+sound/sparc/dbri.c:923:		*(cmd++) = DBRI_CMD(D_DTS, 0, val);
+sound/sparc/dbri.c:928:		val = D_DTS_VI | D_DTS_INS | D_DTS_PRVIN(prevpipe) | pipe;
+sound/sparc/dbri.c:929:		*(cmd++) = DBRI_CMD(D_DTS, 0, val);
+sound/sparc/dbri.c:961:		val = D_DTS_VI | D_DTS_DEL | D_DTS_PRVIN(prevpipe) | pipe;
+sound/sparc/dbri.c:962:		*(cmd++) = DBRI_CMD(D_DTS, 0, val);
+sound/sparc/dbri.c:966:		val = D_DTS_VO | D_DTS_DEL | D_DTS_PRVOUT(prevpipe) | pipe;
+sound/sparc/dbri.c:967:		*(cmd++) = DBRI_CMD(D_DTS, 0, val);
+sound/sparc/dbri.c:1241:	val = D_DTS_VO | D_DTS_VI | D_DTS_INS
+sound/sparc/dbri.c:1242:		| D_DTS_PRVIN(16) | D_PIPE(16) | D_DTS_PRVOUT(16);
+sound/sparc/dbri.c:1243:	*(cmd++) = DBRI_CMD(D_DTS, 0, val);
+sound/sparc/dbri.c:1509:	 * values in the Define Time Slot (DTS) commands.  This is
+sound/i2c/other/ak4113.c:463:	.name =		"IEC958 DTS Bitstream",
+sound/i2c/other/ak4113.c:564:	c1 = (ak4113->rcs1 & (AK4113_DTSCD | AK4113_NPCM | AK4113_PEM |
+sound/i2c/other/ak4113.c:566:		(rcs1 & (AK4113_DTSCD | AK4113_NPCM | AK4113_PEM |
+sound/i2c/other/ak4113.c:604:	if (c1 & AK4113_DTSCD)
+sound/i2c/other/ak4117.c:413:	.name =		"IEC958 DTS Bitstream",
+sound/i2c/other/ak4117.c:485:	c1 = (ak4117->rcs1 & (AK4117_DTSCD | AK4117_NPCM | AK4117_PEM | 0x0f)) ^
+sound/i2c/other/ak4117.c:486:	             (rcs1 & (AK4117_DTSCD | AK4117_NPCM | AK4117_PEM | 0x0f));
+sound/i2c/other/ak4117.c:514:	if (c1 & AK4117_DTSCD)
+sound/i2c/other/ak4114.c:434:	.name =		"IEC958 DTS Bitstream",
+sound/i2c/other/ak4114.c:548:	if (c0 & AK4114_DTSCD)
+sound/usb/quirks.c:606:#define MAUDIO_SET_DTS		0x02 /* enable DTS Digital Output */
+sound/usb/quirks.c:659:		if ((chip->setup & MAUDIO_SET_DTS) && altno != 6)
+tools/power/x86/turbostat/turbostat.8:112:CPUID(6): APERF, DTS, PTM, EPB
+tools/power/x86/turbostat/turbostat.c:340:		fprintf(stderr, "DTS: %dC\n", c->core_temp_c);
+tools/power/x86/turbostat/turbostat.c:1602:	/* DTS is per-core, no need to print for each thread */
+tools/power/x86/turbostat/turbostat.c:1834: * below this value, including the Digital Thermal Sensor (DTS),
+tools/power/x86/turbostat/turbostat.c:1962:			do_dts ? ", DTS" : "",
